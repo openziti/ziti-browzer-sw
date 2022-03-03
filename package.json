@@ -1,6 +1,6 @@
 {
   "name": "@openziti/ziti-browzer-sw",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "files": [
     "dist"
   ],
@@ -60,5 +60,4 @@
     "url": "https://github.com/openziti/ziti-browzer-sw/issues"
   },
   "homepage": "https://github.com/openziti/ziti-browzer-sw"
-
 }
