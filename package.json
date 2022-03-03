@@ -1,6 +1,10 @@
 {
   "name": "@openziti/ziti-browzer-sw",
   "version": "0.1.10",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/ziti-browzer-sw.js",
   "engines": {
     "node": ">= 10.0.0"
   },
@@ -31,5 +35,30 @@
     "workbox-precaching": "^6.5.0",
     "workbox-routing": "^6.5.0",
     "workbox-strategies": "^6.5.0"
-  }
+  },
+  "keywords": [
+    "ziti",
+    "zero trust",
+    "zero-trust",
+    "browZer",
+    "browser",
+    "js",
+    "javascript",
+    "workbox"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openziti/ziti-browzer-sw.git"
+  },
+  "author": {
+    "name": "NetFoundry",
+    "url": "http://netfoundry.io",
+    "email": "openziti@netfoundry.io"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/openziti/ziti-browzer-sw/issues"
+  },
+  "homepage": "https://github.com/openziti/ziti-browzer-sw"
+
 }
