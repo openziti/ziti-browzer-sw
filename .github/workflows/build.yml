@@ -84,7 +84,7 @@ jobs:
       # - run: npm test
 
       - name: Publish production release
-        if: (github.ref == 'refs/heads/main' && github.actor != 'depbot') # do not publish if only doing a dep update initiated by dependabot 
+        if: (github.ref == 'refs/heads/main' && github.actor != 'dependabot[bot]') # do not publish if only doing a dep update initiated by dependabot 
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
