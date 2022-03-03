@@ -1,6 +1,6 @@
 {
   "name": "ziti-browzer-sw",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "engines": {
     "node": ">= 10.0.0"
