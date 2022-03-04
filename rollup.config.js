@@ -22,7 +22,8 @@ export default {
       'workbox-expiration',
       'workbox-precaching',
       'workbox-routing',
-      'workbox-strategies'
+      'workbox-strategies',
+      'libcrypto'
     ];
 
     let res = chunkNames.find((chunkName) => id.includes(chunkName) ) || 'misc';
@@ -45,7 +46,7 @@ export default {
     // terser(),
   ],
   output: {
-    sourcemap: true,
+    sourcemap: false,
     format: 'amd',
     dir: BUILD_DIR,
   },
