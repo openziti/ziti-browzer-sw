@@ -5,6 +5,7 @@
     "dist"
   ],
   "main": "dist/ziti-browzer-sw.js",
+  "description": "Service Worker used as part of the OpenZiti browZer stack",
   "engines": {
     "node": ">= 10.0.0"
   },
@@ -29,7 +30,7 @@
     "clean": "fsbin remove dist"
   },
   "dependencies": {
-    "@openziti/ziti-browzer-sw-workbox-strategies": "^0.1.5",
+    "@openziti/ziti-browzer-sw-workbox-strategies": "^0.1.6",
     "workbox-core": "^6.5.0",
     "workbox-expiration": "^6.5.0",
     "workbox-precaching": "^6.5.0",
