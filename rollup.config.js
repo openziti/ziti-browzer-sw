@@ -4,7 +4,8 @@ import OMT from '@surma/rollup-plugin-off-main-thread';
 import replace from '@rollup/plugin-replace';
 import resolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
-import workboxInjectManifest from 'rollup-plugin-workbox-inject';
+// import workboxInjectManifest from 'rollup-plugin-workbox-inject';
+import { nodeResolve } from "@rollup/plugin-node-resolve";
 
 const SRC_DIR   = 'src';
 const BUILD_DIR = 'dist';
@@ -18,19 +19,23 @@ export default {
     }
 
     const chunkNames = [
+      '@openziti/libcrypto',
+      '@openziti/ziti-browzer-sw-workbox-strategies',
+      '@openziti/ziti-browzer-edge-client',
       'workbox-core',
       'workbox-expiration',
       'workbox-precaching',
       'workbox-routing',
       'workbox-strategies',
-      'libcrypto'
     ];
 
     let res = chunkNames.find((chunkName) => id.includes(chunkName) ) || 'misc';
+    res = res.replace('/','-');
     return `ziti-browzer-sw-${res}`;
 
   },
   plugins: [
+    nodeResolve(),
     resolve({
       browser: true,
     }),
@@ -40,9 +45,16 @@ export default {
     }),
     typescript(),
     OMT(),
-    workboxInjectManifest({
-      globDirectory: BUILD_DIR,
-    }),
+    // workboxInjectManifest({
+    //   globDirectory: BUILD_DIR,
+    //   globPatterns: [
+    //     '*.js',
+    //   ],
+    //   "globIgnores": [
+    //     "**/node_modules/**/*",
+    //     "*.map",
+    //   ]
+    // }),
     // terser(),
   ],
   output: {
