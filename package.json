@@ -1,6 +1,6 @@
 {
   "name": "@openziti/ziti-browzer-sw",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "files": [
     "dist"
   ],
