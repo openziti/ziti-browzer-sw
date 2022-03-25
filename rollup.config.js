@@ -6,6 +6,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 // import workboxInjectManifest from 'rollup-plugin-workbox-inject';
 import { nodeResolve } from "@rollup/plugin-node-resolve";
+import json from '@rollup/plugin-json';
 
 const SRC_DIR   = 'src';
 const BUILD_DIR = 'dist';
@@ -35,6 +36,7 @@ export default {
 
   },
   plugins: [
+    json(),
     nodeResolve(),
     resolve({
       browser: true,
