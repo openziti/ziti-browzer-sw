@@ -3,6 +3,8 @@
     "moduleResolution": "node",
     "lib": ["es2017", "webworker"],
     "strict": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "target": "esnext"
   },
   "include": [
