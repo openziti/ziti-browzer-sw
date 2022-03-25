@@ -10,7 +10,10 @@ import {ZitiFirstStrategy} from '@openziti/ziti-browzer-sw-workbox-strategies';
 
 import pjson from '../package.json';
 
-precacheAndRoute(self.__WB_MANIFEST);
+import {logger} from 'workbox-core/_private/logger.js';
+
+
+// precacheAndRoute(self.__WB_MANIFEST);
 cleanupOutdatedCaches();
 
 
@@ -36,6 +39,9 @@ setCatchHandler(new NetworkOnly());
 skipWaiting();
 
 self.addEventListener('message', (event) => {
+
+  logger.debug(`message received: `, event);
+
   if (event.data.type === 'GET_VERSION') {
     event.ports[0].postMessage(pjson.version);
   }
