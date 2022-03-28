@@ -7,7 +7,7 @@ import {
 } from 'workbox-precaching';
 import {ExpirationPlugin} from 'workbox-expiration';
 import {registerRoute, setCatchHandler} from 'workbox-routing';
-import {skipWaiting} from 'workbox-core';
+import {clientsClaim} from 'workbox-core';
 import {URLPattern} from 'urlpattern-polyfill';
 import {ZitiFirstStrategy} from '@openziti/ziti-browzer-sw-workbox-strategies';
 
@@ -40,12 +40,9 @@ registerRoute(
 // If anything goes wrong when handling a route, return the network response.
 setCatchHandler(new NetworkOnly());
 
-skipWaiting();
+clientsClaim();
 
 self.addEventListener('message', (event) => {
-
-  console.log(`message received: `, event);
-
   if (event.data.type === 'GET_VERSION') {
     event.ports[0].postMessage(pjson.version);
   }

@@ -37,7 +37,9 @@ export default {
   },
   plugins: [
     json(),
-    nodeResolve(),
+    nodeResolve({
+      preferBuiltins: false
+    }),
     resolve({
       browser: true,
     }),
