@@ -971,9 +971,9 @@
     superagent "^7.1.1"
 
 "@openziti/ziti-browzer-sw-workbox-strategies@^0.1.10":
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/@openziti/ziti-browzer-sw-workbox-strategies/-/ziti-browzer-sw-workbox-strategies-0.1.10.tgz#344f3bc327d3bfac9f86e8469a57cf897ab72a7d"
-  integrity sha512-UggW8+mhWHKiv2UGdZdGQ8gu2DrpslLUtPjbmIPH12fhu0H9fyT5JTMSjUOGTcO0cplbPrSpXd8013jXGrlpIQ==
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/@openziti/ziti-browzer-sw-workbox-strategies/-/ziti-browzer-sw-workbox-strategies-0.1.13.tgz#f93077dbfafbcba0eef22af33ec569126a669ca6"
+  integrity sha512-YszSy0Nj/azNfi1Q569MFX318Da6FGnPBtbMb6uP/e6GH/yD9mcHQg4eW2Ecx1FFGNl2yjCJxUIJ7r/WYtjWBA==
   dependencies:
     "@openziti/ziti-browzer-core" "^0.2.5"
     workbox-core "^6.5.0"
