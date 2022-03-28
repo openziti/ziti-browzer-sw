@@ -22,16 +22,19 @@ registerRoute(
   ({request}) => new URLPattern({
     pathname: '/(.*)',
   }).test(request.url),
-  new ZitiFirstStrategy({
-    cacheName: 'ziti',
-    plugins: [
-      new ExpirationPlugin({
-        maxEntries: 20,
-      }),
-    ],
-  })
+  new ZitiFirstStrategy(
+    {
+      logLevel:       new URLSearchParams(location.search).get("logLevel")      || 'Silent',
+      controllerApi:  new URLSearchParams(location.search).get("controllerApi") || undefined,
+      cacheName:      'ziti-browzer-cache',
+      plugins: [
+        new ExpirationPlugin({
+          maxEntries: 20,
+        }),
+      ],
+    }
+  )
 );
-
 
 
 // If anything goes wrong when handling a route, return the network response.
