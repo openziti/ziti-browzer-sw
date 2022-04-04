@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.1.20...v0.2.0) (2022-04-04)
+
+
+### Features
+
+* phase3 ([#33](https://github.com/openziti/ziti-browzer-sw/issues/33)) ([93fdad7](https://github.com/openziti/ziti-browzer-sw/commit/93fdad7d588363c4520ddfb7db7e7945ed2fff45))
+
+
+
 ## [0.1.20](https://github.com/openziti/ziti-browzer-sw/compare/v0.1.19...v0.1.20) (2022-03-28)
 
 
