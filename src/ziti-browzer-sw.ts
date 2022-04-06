@@ -2,7 +2,6 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _logLevel: any;
   _logger: any;
   _core: ZitiBrowzerCore;
-  _decodedJWTtoken: any;
   _zitiConfig: any;
 }
 
@@ -49,7 +48,6 @@ registerRoute(
       zitiBrowzerServiceWorkerGlobalScope: self,
       logLevel:       new URLSearchParams(location.search).get("logLevel")      || 'Silent',
       controllerApi:  new URLSearchParams(location.search).get("controllerApi") || undefined,
-      decodedJWTtoken: self._decodedJWTtoken,
       cacheName:      'ziti-browzer-cache',
       plugins: [
         new ExpirationPlugin({
