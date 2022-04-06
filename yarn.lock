@@ -2672,10 +2672,10 @@ upath@^1.2.0:
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.2.0.tgz#8f66dbcd55a883acdae4408af8b035a5044c1894"
   integrity sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==
 
-urlpattern-polyfill@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/urlpattern-polyfill/-/urlpattern-polyfill-0.1.6.tgz#c2e66db826833482c5ccb36e4bf49f2b97536535"
-  integrity sha512-qFFe1ovjB/gjD7B0PgCML5uJLHQfyUFzd5rwENeGSiPpPeK2F37pY6BAisrrmUYFK95wuZQhK5ekVGu2/JT2mQ==
+urlpattern-polyfill@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/urlpattern-polyfill/-/urlpattern-polyfill-4.0.2.tgz#df0fe52e4bbd1f62ce857f050f3752383b00bf28"
+  integrity sha512-qWm0awpsU1wCmofU3dy3EzpgoJiqJoq8LK+7YtYngfOrj2e7dDXB5xjacy+dMLlS0jgqtFx5hQWYpAuV2FtT7w==
 
 util-deprecate@^1.0.1:
   version "1.0.2"
