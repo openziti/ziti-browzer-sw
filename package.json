@@ -34,7 +34,8 @@
     "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('You must use Yarn to install, not NPM')\""
   },
   "dependencies": {
-    "@openziti/ziti-browzer-sw-workbox-strategies": "^0.3.0",
+    "@openziti/ziti-browzer-sw-workbox-strategies": "^0.4.0",
+    "@types/lodash-es": "^4.17.6",
     "workbox-core": "^6.5.0",
     "workbox-expiration": "^6.5.0",
     "workbox-precaching": "^6.5.0",

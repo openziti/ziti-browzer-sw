@@ -8,14 +8,14 @@
     <br>
     <br>
     <b>
-    This component contains the ServiceWorker used as part of the <a href="https://ziti.devdev/about">OpenZiti</a> Zero Trust browZer stack</b>
+    This component contains the ServiceWorker used as part of the <a href="https://ziti.dev/about">OpenZiti</a> Zero Trust browZer stack</b>
 </p>
 
 <p align="center">
     <br>
     <b>Are you interested in knowing how to easily embed programmable, high performance, zero trust networking into your app, on any internet connection, without VPNs?
     <br>
-    Learn more about our <a href="https://ziti.devdev/about">OpenZiti</a> project by clicking the image below:</b>
+    Learn more about our <a href="https://ziti.dev/about">OpenZiti</a> project by clicking the image below:</b>
     <br>
     <br>
     <a href="https://ziti.dev"><img src="ziti-dev-logo.png" width="200"></a>
