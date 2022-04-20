@@ -36,14 +36,15 @@ export default {
 
   },
   plugins: [
+    commonjs(),
     json(),
     nodeResolve({
       preferBuiltins: false
     }),
     resolve({
+      preferBuiltins: false,
       browser: true,
     }),
-    commonjs(),
     replace({
       'preventAssignment': true,
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
