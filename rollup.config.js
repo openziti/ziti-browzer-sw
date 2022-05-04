@@ -4,7 +4,6 @@ import OMT from '@surma/rollup-plugin-off-main-thread';
 import replace from '@rollup/plugin-replace';
 import resolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
-// import workboxInjectManifest from 'rollup-plugin-workbox-inject';
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import json from '@rollup/plugin-json';
 
