@@ -1610,10 +1610,10 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-urlpattern-polyfill@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/urlpattern-polyfill/-/urlpattern-polyfill-0.1.6.tgz#c2e66db826833482c5ccb36e4bf49f2b97536535"
-  integrity sha512-qFFe1ovjB/gjD7B0PgCML5uJLHQfyUFzd5rwENeGSiPpPeK2F37pY6BAisrrmUYFK95wuZQhK5ekVGu2/JT2mQ==
+urlpattern-polyfill@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/urlpattern-polyfill/-/urlpattern-polyfill-5.0.0.tgz#78608921c82abc50d35870432395fd30fcbe6430"
+  integrity sha512-lCF8s9P/IEXEd3tFNLniseJ4suFj+cmutMQN2cUe7aXD9CqU2qJufM6pGUuhGVbdFKzIzR4gsIJZbmSPbnA+Uw==
 
 utf-8-validate@^5.0.9:
   version "5.0.9"
