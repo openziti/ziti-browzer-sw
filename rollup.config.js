@@ -19,18 +19,25 @@ export default {
     }
 
     const chunkNames = [
-      '@openziti/libcrypto',
-      '@openziti/ziti-browzer-sw-workbox-strategies',
-      '@openziti/ziti-browzer-edge-client',
+      '/lodash-es/',
+      '/workbox-routing/',
+      '/libcrypto/',
+      '/ziti-browzer-core/',
+      '/ziti-browzer-sw-workbox-strategies/',
+      '/ziti-browzer-edge-client/',
       'workbox-core',
       'workbox-expiration',
       'workbox-precaching',
-      'workbox-routing',
       'workbox-strategies',
+      'uuid',
     ];
 
+    console.log('id is: ', id);
+
     let res = chunkNames.find((chunkName) => id.includes(chunkName) ) || 'misc';
-    res = res.replace('/','-');
+    console.log('res is: ', res);
+    let regex = /\//g;
+    res = res.replace(regex,'-');
     return `ziti-browzer-sw-${res}`;
 
   },

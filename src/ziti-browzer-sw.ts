@@ -2,20 +2,17 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _logLevel: any;
   _logger: any;
   _core: ZitiBrowzerCore;
+  _zitiContext: any;
   _zitiConfig: any;
   _uuid: any;
+  _cookieObject: any;
 }
 
 declare const self: zitiBrowzerServiceWorkerGlobalScope;
 
-import {NetworkOnly} from 'workbox-strategies';
-import {
-  cleanupOutdatedCaches, 
-  // precacheAndRoute
-} from 'workbox-precaching';
+import {cleanupOutdatedCaches} from 'workbox-precaching';
 import {ExpirationPlugin} from 'workbox-expiration';
 import {registerRoute, setCatchHandler} from 'workbox-routing';
-import {NetworkFirst} from 'workbox-strategies';
 import {clientsClaim} from 'workbox-core';
 import {URLPattern} from 'urlpattern-polyfill';
 import {ZitiFirstStrategy} from '@openziti/ziti-browzer-sw-workbox-strategies';
@@ -34,28 +31,38 @@ import pjson from '../package.json';
     logLevel: self._logLevel,
     suffix: 'SW'
  });
+ self._cookieObject = {};
  self._logger.trace(`main sw starting for UUID: `, self._uuid);
-
  
-// precacheAndRoute(self.__WB_MANIFEST);
-cleanupOutdatedCaches();
-self._logger.trace(`cleanupOutdatedCaches complete`);
+// cleanupOutdatedCaches();
+// self._logger.trace(`cleanupOutdatedCaches complete`);
 
 
 registerRoute(
-  ({request}) => new URLPattern({
-    pathname: '/(.*)',
-  }).test(request.url),
+
+  ({request}) => new URLPattern( { pathname: '/(.*)', } ).test(request.url),
+
   new ZitiFirstStrategy(
     {
       uuid: self._uuid,
       zitiBrowzerServiceWorkerGlobalScope: self,
       logLevel:       new URLSearchParams(location.search).get("logLevel")      || 'Silent',
       controllerApi:  new URLSearchParams(location.search).get("controllerApi") || undefined,
+
       cacheName:      'ziti-browzer-cache',
+
       plugins: [
         new ExpirationPlugin({
-          maxEntries: 20,
+
+          // Cap the number of items we cache
+          maxEntries: 100,
+          
+          // Don't keep any items for more than 30 days
+          maxAgeSeconds: 30 * 24 * 60 * 60,
+
+          // Automatically cleanup if cache quota is exceeded
+          purgeOnQuotaError: true
+
         }),
       ],
     }
@@ -83,6 +90,7 @@ self.addEventListener('message', async (event) => {
       zitiConfig: self._zitiConfig
     });
   }
+
   /**
    * 
    */
@@ -94,6 +102,17 @@ self.addEventListener('message', async (event) => {
       version: pjson.version,
       zitiConfig: self._zitiConfig
     });
+  }
+
+  /**
+   * 
+   */
+   else if (event.data.type === 'SET_COOKIE') {
+    let name = event.data.payload.name;
+    let value = event.data.payload.value;
+    if (typeof self._cookieObject !== 'undefined') {
+        self._cookieObject[name] = value;
+    }
   }
 
 });
