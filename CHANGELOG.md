@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.5.2...v0.6.0) (2022-06-01)
+
+
+### Features
+
+* TLS via WASM ([#59](https://github.com/openziti/ziti-browzer-sw/issues/59)) ([21fb3ce](https://github.com/openziti/ziti-browzer-sw/commit/21fb3cec24fc07cf78e9a6097a65acc3de8497f3))
+
+
+
 ## [0.5.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.5.1...v0.5.2) (2022-05-04)
 
 
