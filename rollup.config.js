@@ -17,6 +17,9 @@ export default {
     if (!id.includes('/node_modules/')) {
       return undefined;
     }
+    if (id.includes('/ziti-browzer-sw/node_modules/@openziti/ziti-browzer-core/')) {
+      return undefined;
+    }
 
     const chunkNames = [
       '/lodash-es/',
@@ -32,10 +35,10 @@ export default {
       'uuid',
     ];
 
-    console.log('id is: ', id);
+    // console.log('id is: ', id);
 
     let res = chunkNames.find((chunkName) => id.includes(chunkName) ) || 'misc';
-    console.log('res is: ', res);
+    // console.log('res is: ', res);
     let regex = /\//g;
     res = res.replace(regex,'-');
     return `ziti-browzer-sw-${res}`;
