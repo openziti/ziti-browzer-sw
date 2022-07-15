@@ -1,4 +1,5 @@
 interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
+  _sendMessageToClients: (message: any) => Promise<unknown>;
   _logLevel: any;
   _logger: any;
   _core: ZitiBrowzerCore;
@@ -112,7 +113,39 @@ self.addEventListener('message', async (event) => {
     let value = event.data.payload.value;
     if (typeof self._cookieObject !== 'undefined') {
         self._cookieObject[name] = value;
+        self._logger.trace(`_cookieObject: `, self._cookieObject);
     }
   }
 
 });
+
+
+/**
+ * 
+ */
+ self._sendMessageToClients = async function ( message ) {
+
+  const allClients = await self.clients.matchAll({type: 'window'});
+
+  return new Promise( async function(resolve, reject) {
+
+    for (const client of allClients) {
+
+      self._logger.trace('sendMessageToClients() processing cmd: ', message.command);
+
+      var messageChannel = new MessageChannel();
+
+      messageChannel.port1.onmessage = function( event ) {
+        self._logger.trace('ziti-sw: sendMessageToClient() reply event is: ', message.command, ' - ', event.data.response);
+          if (event.data.error) {
+            reject(event.data.error);
+          } else {
+            resolve(event.data.response);
+          }
+      };
+
+      client.postMessage(message, [messageChannel.port2]);
+    } 
+  });
+
+}
