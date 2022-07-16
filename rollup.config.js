@@ -17,6 +17,10 @@ export default {
     if (!id.includes('/node_modules/')) {
       return undefined;
     }
+
+    /**
+     * comment out the following IFF doing 'yarn link @openziti/ziti-browzer-sw-workbox-strategies' dev builds
+     */
     if (id.includes('/ziti-browzer-sw/node_modules/@openziti/ziti-browzer-core/')) {
       return undefined;
     }
