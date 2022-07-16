@@ -1,3 +1,12 @@
+## [0.6.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.2...v0.6.3) (2022-07-16)
+
+
+### Bug Fixes
+
+* Optional WASM Load ([#65](https://github.com/openziti/ziti-browzer-sw/issues/65)) ([5ce6f8f](https://github.com/openziti/ziti-browzer-sw/commit/5ce6f8f0acf3c0e32ad11d860b7400fc6c26c75e))
+
+
+
 ## [0.6.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.1...v0.6.2) (2022-07-15)
 
 
