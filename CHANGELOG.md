@@ -1,3 +1,12 @@
+## [0.6.5](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.4...v0.6.5) (2022-07-19)
+
+
+### Bug Fixes
+
+* updep ([#68](https://github.com/openziti/ziti-browzer-sw/issues/68)) ([19b9730](https://github.com/openziti/ziti-browzer-sw/commit/19b973060bc533b389dd168b57d7b52725359b34))
+
+
+
 ## [0.6.4](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.3...v0.6.4) (2022-07-19)
 
 
