@@ -1,3 +1,12 @@
+## [0.6.6](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.5...v0.6.6) (2022-07-19)
+
+
+### Bug Fixes
+
+* Pause for session cert sync to ER ([#69](https://github.com/openziti/ziti-browzer-sw/issues/69)) ([ff6b77e](https://github.com/openziti/ziti-browzer-sw/commit/ff6b77ecfb3e38cd1832db893f52a1976b30bf49))
+
+
+
 ## [0.6.5](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.4...v0.6.5) (2022-07-19)
 
 
