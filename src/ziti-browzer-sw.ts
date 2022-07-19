@@ -7,6 +7,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _zitiConfig: any;
   _uuid: any;
   _cookieObject: any;
+  _zbrReloadPending: boolean;
 }
 
 declare const self: zitiBrowzerServiceWorkerGlobalScope;
@@ -108,13 +109,21 @@ self.addEventListener('message', async (event) => {
   /**
    * 
    */
-   else if (event.data.type === 'SET_COOKIE') {
+  else if (event.data.type === 'SET_COOKIE') {
     let name = event.data.payload.name;
     let value = event.data.payload.value;
     if (typeof self._cookieObject !== 'undefined') {
         self._cookieObject[name] = value;
         self._logger.trace(`_cookieObject: `, self._cookieObject);
     }
+  }
+
+  /**
+   * 
+   */
+  else if (event.data.type === 'ZBR_INIT_COMPLETE') {
+    self._logger.trace(`message.ZBR_INIT_COMPLETE received `);
+    self._zbrReloadPending = false;
   }
 
 });
