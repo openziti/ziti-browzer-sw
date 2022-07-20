@@ -1,3 +1,12 @@
+## [0.6.7](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.6...v0.6.7) (2022-07-20)
+
+
+### Bug Fixes
+
+* getMatchConfigInterceptV1 false positives ([#70](https://github.com/openziti/ziti-browzer-sw/issues/70)) ([9ffa444](https://github.com/openziti/ziti-browzer-sw/commit/9ffa4449632d614ad3be92f92c372cb4c59720b0))
+
+
+
 ## [0.6.6](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.5...v0.6.6) (2022-07-19)
 
 
