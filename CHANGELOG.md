@@ -1,3 +1,12 @@
+## [0.6.8](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.7...v0.6.8) (2022-07-21)
+
+
+### Bug Fixes
+
+* Need for Speed: make EC keys the default ([#72](https://github.com/openziti/ziti-browzer-sw/issues/72)) ([a8c739d](https://github.com/openziti/ziti-browzer-sw/commit/a8c739d5719272869d435d96327f3fcf2078632d))
+
+
+
 ## [0.6.7](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.6...v0.6.7) (2022-07-20)
 
 
