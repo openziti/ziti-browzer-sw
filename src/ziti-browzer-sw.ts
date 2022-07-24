@@ -66,6 +66,15 @@ registerRoute(
           purgeOnQuotaError: true
 
         }),
+        {
+          fetchDidFail: async ({originalRequest, request, error, event, state}) => {
+            // No return expected.
+            // Note: `originalRequest` is the browser's request, `request` is the
+            // request after being passed through plugins with
+            // `requestWillFetch` callbacks, and `error` is the exception that caused
+            // the underlying `fetch()` to fail.
+          },        
+        },
       ],
     }
   )
@@ -110,6 +119,7 @@ self.addEventListener('message', async (event) => {
    * 
    */
   else if (event.data.type === 'SET_COOKIE') {
+    self._logger.trace(`message.SET_COOKIE received, payload is: `, event.data.payload);
     let name = event.data.payload.name;
     let value = event.data.payload.value;
     if (typeof self._cookieObject !== 'undefined') {
@@ -140,12 +150,12 @@ self.addEventListener('message', async (event) => {
 
     for (const client of allClients) {
 
-      self._logger.trace('sendMessageToClients() processing cmd: ', message.command);
+      self._logger.trace('sendMessageToClients() processing cmd: ', message.type);
 
       var messageChannel = new MessageChannel();
 
       messageChannel.port1.onmessage = function( event ) {
-        self._logger.trace('ziti-sw: sendMessageToClient() reply event is: ', message.command, ' - ', event.data.response);
+        self._logger.trace('ziti-sw: sendMessageToClient() reply event is: ', message.type, ' - ', event.data.response);
           if (event.data.error) {
             reject(event.data.error);
           } else {
