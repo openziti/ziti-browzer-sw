@@ -57,7 +57,7 @@ registerRoute(
         new ExpirationPlugin({
 
           // Cap the number of items we cache
-          maxEntries: 100,
+          maxEntries: 1000,
           
           // Don't keep any items for more than 30 days
           maxAgeSeconds: 30 * 24 * 60 * 60,
