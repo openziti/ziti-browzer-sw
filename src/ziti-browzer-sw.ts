@@ -27,18 +27,15 @@ import pjson from '../package.json';
 /**
  * 
  */
- self._uuid = uuidv4();
- self._core = new ZitiBrowzerCore({});
- self._logger = self._core.createZitiLogger({
-    logLevel: self._logLevel,
-    suffix: 'SW'
- });
- self._cookieObject = {};
- self._logger.trace(`main sw starting for UUID: `, self._uuid);
+self._uuid = uuidv4();
+self._core = new ZitiBrowzerCore({});
+self._logger = self._core.createZitiLogger({
+  logLevel: self._logLevel,
+  suffix: 'SW'
+});
+self._cookieObject = {};
+self._logger.trace(`main sw starting for UUID: `, self._uuid);
  
-// cleanupOutdatedCaches();
-// self._logger.trace(`cleanupOutdatedCaches complete`);
-
 
 registerRoute(
 
@@ -63,7 +60,7 @@ registerRoute(
           maxAgeSeconds: 30 * 24 * 60 * 60,
 
           // Automatically cleanup if cache quota is exceeded
-          purgeOnQuotaError: true
+          purgeOnQuotaError: false
 
         }),
         {
@@ -80,9 +77,6 @@ registerRoute(
   )
 );
 
-
-// // If anything goes wrong when handling a route, return the network response.
-// setCatchHandler(new NetworkOnly());
 
 clientsClaim();
 
