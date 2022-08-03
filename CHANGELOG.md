@@ -1,3 +1,12 @@
+# [0.7.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.11...v0.7.0) (2022-08-03)
+
+
+### Features
+
+* enhance SW caching ([#78](https://github.com/openziti/ziti-browzer-sw/issues/78)) ([0c23c8b](https://github.com/openziti/ziti-browzer-sw/commit/0c23c8bd7b6117d962a1af239b16d75a2e26cf4b))
+
+
+
 ## [0.6.11](https://github.com/openziti/ziti-browzer-sw/compare/v0.6.10...v0.6.11) (2022-08-02)
 
 
