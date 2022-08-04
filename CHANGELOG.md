@@ -1,3 +1,12 @@
+# [0.9.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.8.0...v0.9.0) (2022-08-04)
+
+
+### Features
+
+* add 'toast' mechanism ([#80](https://github.com/openziti/ziti-browzer-sw/issues/80)) ([15c58b5](https://github.com/openziti/ziti-browzer-sw/commit/15c58b5dee73ad8bf772d9e943371e97f1ac7732))
+
+
+
 # [0.8.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.7.0...v0.8.0) (2022-08-03)
 
 
