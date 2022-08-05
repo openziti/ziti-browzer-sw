@@ -1,3 +1,12 @@
+## [0.10.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.10.0...v0.10.1) (2022-08-05)
+
+
+### Bug Fixes
+
+* correct unregister/reload race ([#82](https://github.com/openziti/ziti-browzer-sw/issues/82)) ([5901948](https://github.com/openziti/ziti-browzer-sw/commit/590194899ea138cfec3b672439d68b5775e38c5f))
+
+
+
 # [0.10.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.9.0...v0.10.0) (2022-08-05)
 
 
