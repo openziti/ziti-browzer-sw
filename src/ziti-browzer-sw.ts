@@ -146,6 +146,13 @@ self.addEventListener('message', async (event) => {
       )
     }
   }
+
+  /**
+   * 
+   */
+  else {
+    self._logger.error(`message.<UNKNOWN> received [${event.data.type}]`);
+  }
 });
 
 /**
