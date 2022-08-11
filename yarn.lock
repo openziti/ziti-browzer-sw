@@ -1720,10 +1720,10 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-urlpattern-polyfill@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/urlpattern-polyfill/-/urlpattern-polyfill-0.1.6.tgz#c2e66db826833482c5ccb36e4bf49f2b97536535"
-  integrity sha512-qFFe1ovjB/gjD7B0PgCML5uJLHQfyUFzd5rwENeGSiPpPeK2F37pY6BAisrrmUYFK95wuZQhK5ekVGu2/JT2mQ==
+urlpattern-polyfill@^5.0.6:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/urlpattern-polyfill/-/urlpattern-polyfill-5.0.6.tgz#98b87986e2ee36609debb08be6f59fdd47342834"
+  integrity sha512-Jh5uMYAPoBlB3xgLZXI9O9e2tXZ0qrFShCimat9nFIFb02PjBAF/lPZSY/cOjbR5CmcDrxSq6v8sA5RjwuJB5w==
 
 utf-8-validate@^5.0.9:
   version "5.0.9"
