@@ -1,3 +1,12 @@
+# [0.11.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.10.2...v0.11.0) (2022-08-11)
+
+
+### Features
+
+* initiate proper ZBR bootstrapping by SW ([#85](https://github.com/openziti/ziti-browzer-sw/issues/85)) ([7c0cb08](https://github.com/openziti/ziti-browzer-sw/commit/7c0cb0899c4997d2f800e9f8b45f23f6904d30c9))
+
+
+
 ## [0.10.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.10.1...v0.10.2) (2022-08-05)
 
 
