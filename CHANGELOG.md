@@ -1,3 +1,12 @@
+## [0.12.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.12.1...v0.12.2) (2022-08-30)
+
+
+### Bug Fixes
+
+* correct IdP token refresh issue ([#90](https://github.com/openziti/ziti-browzer-sw/issues/90)) ([b500fb9](https://github.com/openziti/ziti-browzer-sw/commit/b500fb96560c6d505e6a27b746f860550d73d177))
+
+
+
 ## [0.12.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.12.0...v0.12.1) (2022-08-23)
 
 
