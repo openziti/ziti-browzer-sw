@@ -1,3 +1,12 @@
+# [0.13.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.12.2...v0.13.0) (2022-08-30)
+
+
+### Features
+
+* add IdP host to CSP ([#91](https://github.com/openziti/ziti-browzer-sw/issues/91)) ([85f0ca2](https://github.com/openziti/ziti-browzer-sw/commit/85f0ca22c15a2a63f9f8405aec85a2193253b596))
+
+
+
 ## [0.12.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.12.1...v0.12.2) (2022-08-30)
 
 
