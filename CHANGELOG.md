@@ -1,3 +1,12 @@
+## [0.13.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.13.0...v0.13.1) (2022-08-30)
+
+
+### Bug Fixes
+
+* allow longer ZBR init time ([#92](https://github.com/openziti/ziti-browzer-sw/issues/92)) ([17861bb](https://github.com/openziti/ziti-browzer-sw/commit/17861bb1231a7fd9e6328f725deeed235741bce2))
+
+
+
 # [0.13.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.12.2...v0.13.0) (2022-08-30)
 
 
