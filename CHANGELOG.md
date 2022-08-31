@@ -1,3 +1,12 @@
+# [0.14.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.13.1...v0.14.0) (2022-08-31)
+
+
+### Features
+
+* hotKey modal support ([#93](https://github.com/openziti/ziti-browzer-sw/issues/93)) ([258ba0b](https://github.com/openziti/ziti-browzer-sw/commit/258ba0ba10a5ba20333fe5f5f02a771917cc691f))
+
+
+
 ## [0.13.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.13.0...v0.13.1) (2022-08-30)
 
 
