@@ -127,8 +127,9 @@ self.addEventListener('message', async (event) => {
    * 
    */
   else if (event.data.type === 'ZBR_INIT_COMPLETE') {
-    self._logger.trace(`message.ZBR_INIT_COMPLETE received `);
+    self._logger.trace(`message.ZBR_INIT_COMPLETE received, payload is: `, event.data.payload);
     self._zbrReloadPending = false;
+    self._zitiConfig = event.data.payload.zitiConfig;
   }
 
   /**
