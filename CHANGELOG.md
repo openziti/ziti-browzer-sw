@@ -1,3 +1,12 @@
+# [0.15.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.14.0...v0.15.0) (2022-09-06)
+
+
+### Features
+
+* client-side logLevel control ([#96](https://github.com/openziti/ziti-browzer-sw/issues/96)) ([a8474b7](https://github.com/openziti/ziti-browzer-sw/commit/a8474b788886277701113a032d548c4e91a5d933))
+
+
+
 # [0.14.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.13.1...v0.14.0) (2022-08-31)
 
 
