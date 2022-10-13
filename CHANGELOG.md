@@ -1,3 +1,12 @@
+## [0.15.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.15.2...v0.15.3) (2022-10-13)
+
+
+### Bug Fixes
+
+* adjust ZBR regex ([#104](https://github.com/openziti/ziti-browzer-sw/issues/104)) ([3bbddd1](https://github.com/openziti/ziti-browzer-sw/commit/3bbddd183f7f37e4591a8bc426e757e2fb92beaa))
+
+
+
 ## [0.15.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.15.1...v0.15.2) (2022-10-07)
 
 
