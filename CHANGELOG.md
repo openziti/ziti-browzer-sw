@@ -1,3 +1,12 @@
+## [0.15.4](https://github.com/openziti/ziti-browzer-sw/compare/v0.15.3...v0.15.4) (2022-10-19)
+
+
+### Bug Fixes
+
+* channel/ws close handling ([#105](https://github.com/openziti/ziti-browzer-sw/issues/105)) ([ec295c4](https://github.com/openziti/ziti-browzer-sw/commit/ec295c4cd21656925253a43e1a9141d424354909))
+
+
+
 ## [0.15.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.15.2...v0.15.3) (2022-10-13)
 
 
