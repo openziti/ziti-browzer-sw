@@ -1,3 +1,12 @@
+## [0.15.5](https://github.com/openziti/ziti-browzer-sw/compare/v0.15.4...v0.15.5) (2022-10-31)
+
+
+### Bug Fixes
+
+* bump to core 0.16.12 ([#108](https://github.com/openziti/ziti-browzer-sw/issues/108)) ([c4573eb](https://github.com/openziti/ziti-browzer-sw/commit/c4573eb47855bf1ffeca774fb8f484652b452ad6))
+
+
+
 ## [0.15.4](https://github.com/openziti/ziti-browzer-sw/compare/v0.15.3...v0.15.4) (2022-10-19)
 
 
