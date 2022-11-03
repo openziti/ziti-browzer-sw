@@ -1,3 +1,12 @@
+# [0.16.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.15.5...v0.16.0) (2022-11-03)
+
+
+### Features
+
+* hard refresh recovery ([#109](https://github.com/openziti/ziti-browzer-sw/issues/109)) ([e52f5ff](https://github.com/openziti/ziti-browzer-sw/commit/e52f5ff8b5238ed88de889560fbd2efd3003243d))
+
+
+
 ## [0.15.5](https://github.com/openziti/ziti-browzer-sw/compare/v0.15.4...v0.15.5) (2022-10-31)
 
 
