@@ -1,6 +1,7 @@
 interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _sendMessageToClients: (message: any) => Promise<unknown>;
   _unregister: () => Promise<unknown>;
+  _pingPage: () => Promise<unknown>;
   _logLevel: any;
   _logger: any;
   _core: ZitiBrowzerCore;
@@ -9,6 +10,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _uuid: any;
   _cookieObject: any;
   _zbrReloadPending: boolean;
+  _zbrPingTimestamp: any;
 }
 
 declare const self: zitiBrowzerServiceWorkerGlobalScope;
@@ -130,8 +132,17 @@ self.addEventListener('message', async (event) => {
     self._logger.trace(`message.ZBR_INIT_COMPLETE received, payload is: `, event.data.payload);
     self._zbrReloadPending = false;
     self._zitiConfig = event.data.payload.zitiConfig;
+    self._zbrPingTimestamp = Date.now();
   }
 
+
+  /**
+   * 
+   */
+  else if (event.data.type === 'ZBR_PING') {
+    self._zbrPingTimestamp = event.data.payload.timestamp;
+  }
+  
   /**
    * 
    */
@@ -171,6 +182,37 @@ self._unregister = async function (  ) {
     )
   }
   self._logger.trace(`_unregister completed `);
+}
+
+
+/**
+ * 
+ */
+self._pingPage = async function (  ) {
+  self._logger.trace(`_pingPage starting `);
+  self.registration.unregister();
+  const windows = await self.clients.matchAll({ type: 'window' })
+
+  return new Promise( async function(resolve, reject) {
+
+    for (const window of windows) {
+
+      var messageChannel = new MessageChannel();
+
+      messageChannel.port1.onmessage = function( event ) {
+        self._logger.trace('_pingPage() <-- reply received');
+        resolve('ok');
+      };
+
+      window.postMessage(
+        { 
+          type: 'PING',
+        },
+        [messageChannel.port2]
+      )
+    }
+    self._logger.trace(`_pingPage() --> sent `);  
+  });
 }
 
 
