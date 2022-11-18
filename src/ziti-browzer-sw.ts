@@ -39,45 +39,68 @@ self._logger = self._core.createZitiLogger({
 self._cookieObject = {};
 self._logger.trace(`main sw starting for UUID: `, self._uuid);
  
+let zfs = new ZitiFirstStrategy(
+  {
+    uuid: self._uuid,
+    zitiBrowzerServiceWorkerGlobalScope: self,
+    logLevel:       new URLSearchParams(location.search).get("logLevel")      || 'Silent',
+    controllerApi:  new URLSearchParams(location.search).get("controllerApi") || undefined,
+
+    cacheName:      'ziti-browzer-cache',
+
+    plugins: [
+      new ExpirationPlugin({
+
+        // Cap the number of items we cache
+        maxEntries: 1000,
+        
+        // Don't keep any items for more than 30 days
+        maxAgeSeconds: 30 * 24 * 60 * 60,
+
+        // Automatically cleanup if cache quota is exceeded
+        purgeOnQuotaError: false
+
+      }),
+      {
+        fetchDidFail: async ({originalRequest, request, error, event, state}) => {
+          // No return expected.
+          // Note: `originalRequest` is the browser's request, `request` is the
+          // request after being passed through plugins with
+          // `requestWillFetch` callbacks, and `error` is the exception that caused
+          // the underlying `fetch()` to fail.
+        },        
+      },
+    ],
+  }
+);
+
+
+const matchGETCb = (url:any, request:any) => {
+  if (typeof self._zitiConfig === 'undefined') {
+    return true;
+  }
+  let controllerURL = new URL(self._zitiConfig.controller.api);
+  if (url.hostname === controllerURL.hostname) {
+    return false;
+  } else {
+    return true;
+  }
+};
 
 registerRoute(
+  ({url, request}) => matchGETCb(url, request), zfs, 'GET'
+);
 
-  ({request}) => new URLPattern( { pathname: '/(.*)', } ).test(request.url),
+const matchPOSTCb = (url:any, request:any) => {
+  if (url.hostname === self._zitiConfig.httpAgent.self.host) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
-  new ZitiFirstStrategy(
-    {
-      uuid: self._uuid,
-      zitiBrowzerServiceWorkerGlobalScope: self,
-      logLevel:       new URLSearchParams(location.search).get("logLevel")      || 'Silent',
-      controllerApi:  new URLSearchParams(location.search).get("controllerApi") || undefined,
-
-      cacheName:      'ziti-browzer-cache',
-
-      plugins: [
-        new ExpirationPlugin({
-
-          // Cap the number of items we cache
-          maxEntries: 1000,
-          
-          // Don't keep any items for more than 30 days
-          maxAgeSeconds: 30 * 24 * 60 * 60,
-
-          // Automatically cleanup if cache quota is exceeded
-          purgeOnQuotaError: false
-
-        }),
-        {
-          fetchDidFail: async ({originalRequest, request, error, event, state}) => {
-            // No return expected.
-            // Note: `originalRequest` is the browser's request, `request` is the
-            // request after being passed through plugins with
-            // `requestWillFetch` callbacks, and `error` is the exception that caused
-            // the underlying `fetch()` to fail.
-          },        
-        },
-      ],
-    }
-  )
+registerRoute(
+  ({url, request}) => matchPOSTCb(url, request), zfs, 'POST'
 );
 
 
