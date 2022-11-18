@@ -1,3 +1,12 @@
+# [0.17.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.16.0...v0.17.0) (2022-11-18)
+
+
+### Features
+
+* registerRoute adjustments ([#112](https://github.com/openziti/ziti-browzer-sw/issues/112)) ([1bcaa0f](https://github.com/openziti/ziti-browzer-sw/commit/1bcaa0fe36eac4d6542f8f734e958148cba78a3c))
+
+
+
 # [0.16.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.15.5...v0.16.0) (2022-11-03)
 
 
