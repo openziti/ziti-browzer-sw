@@ -1,3 +1,12 @@
+## [0.17.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.17.0...v0.17.1) (2022-11-21)
+
+
+### Bug Fixes
+
+* host the 'toast' locally, not in CDN ([#113](https://github.com/openziti/ziti-browzer-sw/issues/113)) ([2494f29](https://github.com/openziti/ziti-browzer-sw/commit/2494f294d274918d0b44a5569a3016a7c5a0bfdd))
+
+
+
 # [0.17.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.16.0...v0.17.0) (2022-11-18)
 
 
