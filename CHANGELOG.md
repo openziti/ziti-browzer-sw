@@ -1,3 +1,12 @@
+## [0.17.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.17.1...v0.17.2) (2022-11-23)
+
+
+### Bug Fixes
+
+* adjust event handling for large Blob responses (Jellyfin streaming) ([#114](https://github.com/openziti/ziti-browzer-sw/issues/114)) ([520919f](https://github.com/openziti/ziti-browzer-sw/commit/520919fea7a12ae2ddde65597217909da7872d43))
+
+
+
 ## [0.17.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.17.0...v0.17.1) (2022-11-21)
 
 
