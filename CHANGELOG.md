@@ -1,3 +1,12 @@
+# [0.18.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.17.2...v0.18.0) (2022-11-27)
+
+
+### Features
+
+* use 'memoization' for some frequently-used expensive (core) funcs ([#115](https://github.com/openziti/ziti-browzer-sw/issues/115)) ([baa5ce6](https://github.com/openziti/ziti-browzer-sw/commit/baa5ce6f055c8c09135256c17435a7d994b1a001))
+
+
+
 ## [0.17.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.17.1...v0.17.2) (2022-11-23)
 
 
