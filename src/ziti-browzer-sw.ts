@@ -77,7 +77,7 @@ let zfs = new ZitiFirstStrategy(
 
 const matchGETCb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
-    return true;
+    return false;
   }
   let controllerURL = new URL(self._zitiConfig.controller.api);
   if (url.hostname === controllerURL.hostname) {
@@ -92,6 +92,9 @@ registerRoute(
 );
 
 const matchPOSTCb = (url:any, request:any) => {
+  if (typeof self._zitiConfig === 'undefined') {
+    return false;
+  }
   if (url.hostname === self._zitiConfig.httpAgent.self.host) {
     return true;
   } else {
