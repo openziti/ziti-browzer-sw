@@ -77,7 +77,7 @@ let zfs = new ZitiFirstStrategy(
 
 const matchGETCb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
-    return false;
+    return true;
   }
   let controllerURL = new URL(self._zitiConfig.controller.api);
   if (url.hostname === controllerURL.hostname) {
