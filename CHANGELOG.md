@@ -1,3 +1,12 @@
+## [0.19.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.19.0...v0.19.1) (2023-03-15)
+
+
+### Bug Fixes
+
+* Intercept GETs while awaiting zitiConfig after SW transitions from Terminated->Idle ([#126](https://github.com/openziti/ziti-browzer-sw/issues/126)) ([5896716](https://github.com/openziti/ziti-browzer-sw/commit/58967168c323d67483c25deea6f4ad20a514e8c9))
+
+
+
 # [0.19.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.18.1...v0.19.0) (2023-01-23)
 
 
