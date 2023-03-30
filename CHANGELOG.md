@@ -1,3 +1,12 @@
+# [0.20.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.19.1...v0.20.0) (2023-03-30)
+
+
+### Features
+
+* IdP OIDC work moved to ZBR ([#127](https://github.com/openziti/ziti-browzer-sw/issues/127)) ([19a1c92](https://github.com/openziti/ziti-browzer-sw/commit/19a1c92dcb133fa49acae3c5f603af27e3ce8245))
+
+
+
 ## [0.19.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.19.0...v0.19.1) (2023-03-15)
 
 
