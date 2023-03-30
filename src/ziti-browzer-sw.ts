@@ -79,6 +79,10 @@ const matchGETCb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
     return true;
   }
+  let getURL = new URL(url);
+  if (getURL.search.includes("code=") && getURL.search.includes("state=")) {
+    return false;
+  }
   let controllerURL = new URL(self._zitiConfig.controller.api);
   if (url.hostname === controllerURL.hostname) {
     return false;
