@@ -1,3 +1,12 @@
+# [0.21.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.20.0...v0.21.0) (2023-04-04)
+
+
+### Features
+
+* listen for idpAuthHealthEvent ([#128](https://github.com/openziti/ziti-browzer-sw/issues/128)) ([dd52ab8](https://github.com/openziti/ziti-browzer-sw/commit/dd52ab86fa6be071e25e6126d666e8fb03fc4320))
+
+
+
 # [0.20.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.19.1...v0.20.0) (2023-03-30)
 
 
