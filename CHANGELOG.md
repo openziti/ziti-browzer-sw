@@ -1,3 +1,12 @@
+## [0.21.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.21.0...v0.21.1) (2023-04-05)
+
+
+### Bug Fixes
+
+* use authQueryElement.typeId ([#129](https://github.com/openziti/ziti-browzer-sw/issues/129)) ([34e4961](https://github.com/openziti/ziti-browzer-sw/commit/34e496154f07d0a2f800f9e42ff350492f506414))
+
+
+
 # [0.21.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.20.0...v0.21.0) (2023-04-04)
 
 
