@@ -1,3 +1,12 @@
+## [0.21.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.21.1...v0.21.2) (2023-04-22)
+
+
+### Bug Fixes
+
+* disable _zbrReloadPending check ([#130](https://github.com/openziti/ziti-browzer-sw/issues/130)) ([de7f846](https://github.com/openziti/ziti-browzer-sw/commit/de7f846f742b7b45d4d12eed778586520084abed))
+
+
+
 ## [0.21.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.21.0...v0.21.1) (2023-04-05)
 
 
