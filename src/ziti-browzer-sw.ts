@@ -3,6 +3,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _unregister: () => Promise<unknown>;
   _accessTokenExpired: () => Promise<unknown>;
   _pingPage: () => Promise<unknown>;
+  _noConfigForService: (serviceName: any) => Promise<unknown>;
   _logLevel: any;
   _logger: any;
   _core: ZitiBrowzerCore;
@@ -259,6 +260,25 @@ self._pingPage = async function (  ) {
     }
     self._logger.trace(`_pingPage() --> sent `);  
   });
+}
+
+/**
+ * 
+ */
+ self._noConfigForService = async function ( event: any ) {
+  self._logger.trace(`_noConfigForService starting `);
+  const windows = await self.clients.matchAll({ type: 'window' })
+  for (const window of windows) {
+    window.postMessage(
+      { 
+        type: 'NO_CONFIG_FOR_SERVICE',
+        payload: {
+          event
+        }
+      } 
+    )
+  }
+  self._logger.trace(`_noConfigForService completed `);
 }
 
 
