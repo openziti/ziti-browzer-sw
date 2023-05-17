@@ -1,3 +1,12 @@
+# [0.22.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.21.2...v0.22.0) (2023-05-17)
+
+
+### Features
+
+* add 'noConfigForService' support ([#131](https://github.com/openziti/ziti-browzer-sw/issues/131)) ([16759e9](https://github.com/openziti/ziti-browzer-sw/commit/16759e9dd144e973cf78b5fdf136cd788eab0696))
+
+
+
 ## [0.21.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.21.1...v0.21.2) (2023-04-22)
 
 
