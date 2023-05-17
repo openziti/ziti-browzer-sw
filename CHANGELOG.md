@@ -1,3 +1,12 @@
+# [0.23.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.22.0...v0.23.0) (2023-05-17)
+
+
+### Features
+
+* bump to core v0.21.1 ([#132](https://github.com/openziti/ziti-browzer-sw/issues/132)) ([2554b5c](https://github.com/openziti/ziti-browzer-sw/commit/2554b5c539287bd7dacb9413a5550fe233645f4a))
+
+
+
 # [0.22.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.21.2...v0.22.0) (2023-05-17)
 
 
