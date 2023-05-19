@@ -1,3 +1,12 @@
+## [0.23.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.23.0...v0.23.1) (2023-05-19)
+
+
+### Bug Fixes
+
+* temp bypass of idpAuthHealthEvent ([#133](https://github.com/openziti/ziti-browzer-sw/issues/133)) ([55a47a5](https://github.com/openziti/ziti-browzer-sw/commit/55a47a5796b99914b8d49cbd1992418af8c5d709))
+
+
+
 # [0.23.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.22.0...v0.23.0) (2023-05-17)
 
 
