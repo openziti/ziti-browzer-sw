@@ -1,3 +1,12 @@
+# [0.26.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.25.0...v0.26.0) (2023-05-30)
+
+
+### Features
+
+* SW bootstrap enhancement ([#136](https://github.com/openziti/ziti-browzer-sw/issues/136)) ([2803dc0](https://github.com/openziti/ziti-browzer-sw/commit/2803dc00def27f3518dd62224748ddd2ad2ac2ba))
+
+
+
 # [0.25.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.24.0...v0.25.0) (2023-05-26)
 
 
