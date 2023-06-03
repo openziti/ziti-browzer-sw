@@ -1,3 +1,12 @@
+# [0.27.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.26.0...v0.27.0) (2023-06-03)
+
+
+### Features
+
+* xgressEvent ([#137](https://github.com/openziti/ziti-browzer-sw/issues/137)) ([8c12236](https://github.com/openziti/ziti-browzer-sw/commit/8c12236a36b1b0fb4b6b6a1339a7e35891412acd))
+
+
+
 # [0.26.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.25.0...v0.26.0) (2023-05-30)
 
 
