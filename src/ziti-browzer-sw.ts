@@ -4,6 +4,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _accessTokenExpired: () => Promise<unknown>;
   _pingPage: () => Promise<unknown>;
   _noConfigForService: (serviceName: any) => Promise<unknown>;
+  _xgressEvent: (event: any) => Promise<unknown>;
   _logLevel: any;
   _logger: any;
   _core: ZitiBrowzerCore;
@@ -281,6 +282,22 @@ self._pingPage = async function (  ) {
   self._logger.trace(`_noConfigForService completed `);
 }
 
+/**
+ * 
+ */
+self._xgressEvent = async function ( event: any ) {
+  const windows = await self.clients.matchAll({ type: 'window' })
+  for (const window of windows) {
+    window.postMessage(
+      { 
+        type: 'XGRESS_EVENT',
+        payload: {
+          event
+        }
+      } 
+    )
+  }
+}
 
 /**
  * 
