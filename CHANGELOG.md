@@ -1,3 +1,12 @@
+## [0.27.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.27.0...v0.27.1) (2023-06-12)
+
+
+### Bug Fixes
+
+* handle spaces in Service name ([#138](https://github.com/openziti/ziti-browzer-sw/issues/138)) ([f1a48ce](https://github.com/openziti/ziti-browzer-sw/commit/f1a48ce1df57599c6ed5f483bfb797c80a7d86f3))
+
+
+
 # [0.27.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.26.0...v0.27.0) (2023-06-03)
 
 
