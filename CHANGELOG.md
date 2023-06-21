@@ -1,3 +1,12 @@
+## [0.27.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.27.1...v0.27.2) (2023-06-21)
+
+
+### Bug Fixes
+
+* eliminate typo in CSP re-generator ([#139](https://github.com/openziti/ziti-browzer-sw/issues/139)) ([95f11e5](https://github.com/openziti/ziti-browzer-sw/commit/95f11e5658327406a5ee5c720b281b655d48d9bc))
+
+
+
 ## [0.27.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.27.0...v0.27.1) (2023-06-12)
 
 
