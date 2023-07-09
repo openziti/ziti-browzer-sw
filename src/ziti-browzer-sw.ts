@@ -36,8 +36,8 @@ import pjson from '../package.json';
 self._uuid = uuidv4();
 self._core = new ZitiBrowzerCore({});
 self._logger = self._core.createZitiLogger({
-  logLevel: self._logLevel,
-  suffix: 'SW'
+  logLevel: new URLSearchParams(location.search).get("logLevel") || 'Silent',
+  suffix: 'ZBSW'
 });
 self._cookieObject = {};
 self._logger.trace(`main sw starting for UUID: `, self._uuid);
@@ -196,7 +196,7 @@ self.addEventListener('message', async (event) => {
    * 
    */
   else {
-    self._logger.error(`message.<UNKNOWN> received [${event.data.type}]`);
+    self._logger.info(`message.<UNKNOWN> received [${event.data.type}]`);
   }
 });
 
