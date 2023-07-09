@@ -1,3 +1,12 @@
+## [0.27.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.27.2...v0.27.3) (2023-07-09)
+
+
+### Bug Fixes
+
+* correct logLevel config handling ([#140](https://github.com/openziti/ziti-browzer-sw/issues/140)) ([d620363](https://github.com/openziti/ziti-browzer-sw/commit/d620363dbd8fae42472ae7f8d5e51c8db78b6385))
+
+
+
 ## [0.27.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.27.1...v0.27.2) (2023-06-21)
 
 
