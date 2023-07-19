@@ -1,3 +1,12 @@
+# [0.28.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.27.4...v0.28.0) (2023-07-19)
+
+
+### Features
+
+* emit troubleshooting alerts ([#142](https://github.com/openziti/ziti-browzer-sw/issues/142)) ([7aa9914](https://github.com/openziti/ziti-browzer-sw/commit/7aa9914d21c1b1f6324d7b87e0df258ad4be2522))
+
+
+
 ## [0.27.4](https://github.com/openziti/ziti-browzer-sw/compare/v0.27.3...v0.27.4) (2023-07-13)
 
 
