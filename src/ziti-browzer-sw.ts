@@ -4,6 +4,9 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _accessTokenExpired: () => Promise<unknown>;
   _pingPage: () => Promise<unknown>;
   _noConfigForService: (serviceName: any) => Promise<unknown>;
+  _sessionCreationError: (error: any) => Promise<unknown>;
+  _noService: (error: any) => Promise<unknown>;
+  _invalidAuth: (error: any) => Promise<unknown>;
   _xgressEvent: (event: any) => Promise<unknown>;
   _logLevel: any;
   _logger: any;
@@ -280,6 +283,63 @@ self._pingPage = async function (  ) {
     )
   }
   self._logger.trace(`_noConfigForService completed `);
+}
+
+/**
+ * 
+ */
+ self._sessionCreationError = async function ( event: any ) {
+  self._logger.trace(`_sessionCreationError starting `);
+  const windows = await self.clients.matchAll({ type: 'window' })
+  for (const window of windows) {
+    window.postMessage(
+      { 
+        type: 'SESSION_CREATION_ERROR',
+        payload: {
+          event
+        }
+      } 
+    )
+  }
+  self._logger.trace(`_sessionCreationError completed `);
+}
+
+/**
+ * 
+ */
+ self._noService = async function ( event: any ) {
+  self._logger.trace(`_noService starting `);
+  const windows = await self.clients.matchAll({ type: 'window' })
+  for (const window of windows) {
+    window.postMessage(
+      { 
+        type: 'NO_SERVICE',
+        payload: {
+          event
+        }
+      } 
+    )
+  }
+  self._logger.trace(`_noService completed `);
+}
+
+/**
+ * 
+ */
+ self._invalidAuth = async function ( event: any ) {
+  self._logger.trace(`_invalidAuth starting `);
+  const windows = await self.clients.matchAll({ type: 'window' })
+  for (const window of windows) {
+    window.postMessage(
+      { 
+        type: 'INVALID_AUTH',
+        payload: {
+          event
+        }
+      } 
+    )
+  }
+  self._logger.trace(`_invalidAuth completed `);
 }
 
 /**
