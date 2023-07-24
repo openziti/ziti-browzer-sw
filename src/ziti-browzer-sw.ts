@@ -7,6 +7,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _sessionCreationError: (error: any) => Promise<unknown>;
   _noService: (error: any) => Promise<unknown>;
   _invalidAuth: (error: any) => Promise<unknown>;
+  _requestFailedWithNoResponse: (error: any) => Promise<unknown>;
   _xgressEvent: (event: any) => Promise<unknown>;
   _logLevel: any;
   _logger: any;
@@ -337,6 +338,25 @@ self._pingPage = async function (  ) {
           event
         }
       } 
+    )
+  }
+  self._logger.trace(`_invalidAuth completed `);
+}
+
+/**
+ *
+ */
+self._requestFailedWithNoResponse = async function ( event: any ) {
+  self._logger.trace(`_requestFailedWithNoResponse starting `);
+  const windows = await self.clients.matchAll({ type: 'window' })
+  for (const window of windows) {
+    window.postMessage(
+      {
+        type: 'REQUEST_FAILED_WITH_NO_RESPONSE',
+        payload: {
+          event
+        }
+      }
     )
   }
   self._logger.trace(`_invalidAuth completed `);

@@ -80,10 +80,10 @@
   dependencies:
     superagent "^7.1.3"
 
-"@openziti/ziti-browzer-sw-workbox-strategies@^0.31.0":
-  version "0.31.0"
-  resolved "https://registry.yarnpkg.com/@openziti/ziti-browzer-sw-workbox-strategies/-/ziti-browzer-sw-workbox-strategies-0.31.0.tgz#2b717f11322bdde494fda581c9ec948fffb23184"
-  integrity sha512-kKy8H3WozBZVbfjeHYaeVh5x+xw2VKZvcM9fs+UZbslZ8TQl3NM6ycTgxOMRtQUW2STjXfsqktiQLcaOc+kB3Q==
+"@openziti/ziti-browzer-sw-workbox-strategies@^0.32.0":
+  version "0.32.0"
+  resolved "https://registry.yarnpkg.com/@openziti/ziti-browzer-sw-workbox-strategies/-/ziti-browzer-sw-workbox-strategies-0.32.0.tgz#e1f1c7f9bd29f9b2c846024d91564e4da8a62cdb"
+  integrity sha512-I0eUvjcRymBZWL6zJzY7HCITAGcXGORTIrt21ihkwhoE3nmVqt5XliduIN5wi+aE4jtzReRhryjKfoSN/WWQ8w==
   dependencies:
     "@openziti/ziti-browzer-core" "^0.26.0"
     async-mutex "^0.3.2"
