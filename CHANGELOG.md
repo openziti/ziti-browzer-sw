@@ -1,3 +1,12 @@
+# [0.30.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.29.0...v0.30.0) (2023-07-26)
+
+
+### Features
+
+* bootstrapper config rename ([#144](https://github.com/openziti/ziti-browzer-sw/issues/144)) ([c2a088c](https://github.com/openziti/ziti-browzer-sw/commit/c2a088c0e18fcecfdfb9bb3e365500a0996cbfc8))
+
+
+
 # [0.29.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.28.0...v0.29.0) (2023-07-24)
 
 
