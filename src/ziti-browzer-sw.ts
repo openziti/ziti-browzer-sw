@@ -106,7 +106,7 @@ const matchPOSTCb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
     return false;
   }
-  if (url.hostname === self._zitiConfig.httpAgent.self.host) {
+  if (url.hostname === self._zitiConfig.browzer.bootstrapper.self.host) {
     return true;
   } else {
     return false;
