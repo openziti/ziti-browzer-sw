@@ -1,3 +1,12 @@
+## [0.30.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.30.0...v0.30.1) (2023-08-02)
+
+
+### Bug Fixes
+
+* async SET_COOKIE msging ([#145](https://github.com/openziti/ziti-browzer-sw/issues/145)) ([0b4f7ee](https://github.com/openziti/ziti-browzer-sw/commit/0b4f7ee7916773e6cd431d129fb4d4e63c2c8483))
+
+
+
 # [0.30.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.29.0...v0.30.0) (2023-07-26)
 
 
