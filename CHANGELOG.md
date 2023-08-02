@@ -1,3 +1,12 @@
+# [0.31.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.30.2...v0.31.0) (2023-08-02)
+
+
+### Features
+
+* alert on channelConnectFailEvent ([#147](https://github.com/openziti/ziti-browzer-sw/issues/147)) ([78ea0f7](https://github.com/openziti/ziti-browzer-sw/commit/78ea0f75ab01ff6b33829573f81b78dba48db88c))
+
+
+
 ## [0.30.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.30.1...v0.30.2) (2023-08-02)
 
 
