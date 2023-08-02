@@ -1,3 +1,12 @@
+## [0.30.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.30.1...v0.30.2) (2023-08-02)
+
+
+### Bug Fixes
+
+* skip 'inject check' when not going over Ziti ([#146](https://github.com/openziti/ziti-browzer-sw/issues/146)) ([68cd9d9](https://github.com/openziti/ziti-browzer-sw/commit/68cd9d9147b7b841ad888cac41564df2949911ad))
+
+
+
 ## [0.30.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.30.0...v0.30.1) (2023-08-02)
 
 
