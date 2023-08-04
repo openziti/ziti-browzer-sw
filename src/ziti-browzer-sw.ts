@@ -84,10 +84,13 @@ let zfs = new ZitiFirstStrategy(
 
 
 const matchGETCb = (url:any, request:any) => {
+  let getURL = new URL(url);
+  if (getURL.pathname.includes("browzer_error")) {
+    return false;
+  }
   if (typeof self._zitiConfig === 'undefined') {
     return true;
   }
-  let getURL = new URL(url);
   if (getURL.search.includes("code=") && getURL.search.includes("state=")) {
     return false;
   }
