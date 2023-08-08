@@ -1,3 +1,12 @@
+# [0.33.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.32.0...v0.33.0) (2023-08-08)
+
+
+### Features
+
+* ZITI_EVENT_NO_WSS_ROUTERS ([#149](https://github.com/openziti/ziti-browzer-sw/issues/149)) ([da6a79a](https://github.com/openziti/ziti-browzer-sw/commit/da6a79ae07bda8235e7d86d1fc0b42b2a2c4269b))
+
+
+
 # [0.32.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.31.0...v0.32.0) (2023-08-04)
 
 
