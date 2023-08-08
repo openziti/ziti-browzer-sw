@@ -9,6 +9,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _invalidAuth: (error: any) => Promise<unknown>;
   _channelConnectFail: (error: any) => Promise<unknown>;
   _requestFailedWithNoResponse: (error: any) => Promise<unknown>;
+  _noWSSRouters: (error: any) => Promise<unknown>;
   _xgressEvent: (event: any) => Promise<unknown>;
   _logLevel: any;
   _logger: any;
@@ -364,6 +365,25 @@ self._channelConnectFail = async function ( event: any ) {
     )
   }
   self._logger.trace(`_channelConnectFail completed `);
+}
+
+/**
+ * 
+ */
+ self._noWSSRouters = async function ( event: any ) {
+  self._logger.trace(`_noWSSRouters starting `);
+  const windows = await self.clients.matchAll({ type: 'window' })
+  for (const window of windows) {
+    window.postMessage(
+      { 
+        type: 'NO_WSS_ROUTERS',
+        payload: {
+          event
+        }
+      } 
+    )
+  }
+  self._logger.trace(`_noWSSRouters completed `);
 }
 
 /**
