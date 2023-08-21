@@ -1,3 +1,12 @@
+## [0.33.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.33.1...v0.33.2) (2023-08-21)
+
+
+### Bug Fixes
+
+* adjust servicePath ([#151](https://github.com/openziti/ziti-browzer-sw/issues/151)) ([e0bd4cf](https://github.com/openziti/ziti-browzer-sw/commit/e0bd4cf715bf4b322a964372242e94fef82ed8d7))
+
+
+
 ## [0.33.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.33.0...v0.33.1) (2023-08-08)
 
 
