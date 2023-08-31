@@ -1,3 +1,12 @@
+# [0.34.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.33.2...v0.34.0) (2023-08-31)
+
+
+### Features
+
+* Rancher support ([#152](https://github.com/openziti/ziti-browzer-sw/issues/152)) ([4818bda](https://github.com/openziti/ziti-browzer-sw/commit/4818bda02d71cc7004e235054c75495528b238c7))
+
+
+
 ## [0.33.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.33.1...v0.33.2) (2023-08-21)
 
 
