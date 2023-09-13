@@ -122,6 +122,21 @@ registerRoute(
   ({url, request}) => matchPOSTCb(url, request), zfs, 'POST'
 );
 
+const matchPUTCb = (url:any, request:any) => {
+  if (typeof self._zitiConfig === 'undefined') {
+    return false;
+  }
+  if (url.hostname === self._zitiConfig.browzer.bootstrapper.self.host) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+registerRoute(
+  ({url, request}) => matchPUTCb(url, request), zfs, 'PUT'
+);
+
 
 clientsClaim();
 
