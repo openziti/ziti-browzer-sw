@@ -1,3 +1,12 @@
+## [0.34.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.34.2...v0.34.3) (2023-09-13)
+
+
+### Bug Fixes
+
+* intercept PUT requests targeting Ziti Service ([#155](https://github.com/openziti/ziti-browzer-sw/issues/155)) ([ef25360](https://github.com/openziti/ziti-browzer-sw/commit/ef25360008f5aa57fcefec1c13d8e75f57a5774e))
+
+
+
 ## [0.34.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.34.1...v0.34.2) (2023-09-13)
 
 
