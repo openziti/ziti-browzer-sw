@@ -1,3 +1,12 @@
+## [0.34.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.34.1...v0.34.2) (2023-09-13)
+
+
+### Bug Fixes
+
+* bump to latest 'core' and 'strategies' ([#154](https://github.com/openziti/ziti-browzer-sw/issues/154)) ([594e4e6](https://github.com/openziti/ziti-browzer-sw/commit/594e4e66919b2a1026269aa6c3f0f1362e9c57c9))
+
+
+
 ## [0.34.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.34.0...v0.34.1) (2023-09-11)
 
 
