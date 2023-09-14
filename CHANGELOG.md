@@ -1,3 +1,12 @@
+## [0.34.4](https://github.com/openziti/ziti-browzer-sw/compare/v0.34.3...v0.34.4) (2023-09-14)
+
+
+### Bug Fixes
+
+* additional METHOD intercepts that target Ziti Services ([#156](https://github.com/openziti/ziti-browzer-sw/issues/156)) ([800396c](https://github.com/openziti/ziti-browzer-sw/commit/800396cee932cdaaddfec960db44731bcc5d9994))
+
+
+
 ## [0.34.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.34.2...v0.34.3) (2023-09-13)
 
 
