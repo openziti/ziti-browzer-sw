@@ -107,6 +107,10 @@ registerRoute(
   ({url, request}) => matchGETCb(url, request), zfs, 'GET'
 );
 
+registerRoute(
+  ({url, request}) => matchGETCb(url, request), zfs, 'HEAD'
+);
+
 const matchPOSTCb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
     return false;
@@ -135,6 +139,36 @@ const matchPUTCb = (url:any, request:any) => {
 
 registerRoute(
   ({url, request}) => matchPUTCb(url, request), zfs, 'PUT'
+);
+
+const matchPATCHCb = (url:any, request:any) => {
+  if (typeof self._zitiConfig === 'undefined') {
+    return false;
+  }
+  if (url.hostname === self._zitiConfig.browzer.bootstrapper.self.host) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+registerRoute(
+  ({url, request}) => matchPATCHCb(url, request), zfs, 'PATCH'
+);
+
+const matchDELETECb = (url:any, request:any) => {
+  if (typeof self._zitiConfig === 'undefined') {
+    return false;
+  }
+  if (url.hostname === self._zitiConfig.browzer.bootstrapper.self.host) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+registerRoute(
+  ({url, request}) => matchDELETECb(url, request), zfs, 'DELETE'
 );
 
 
