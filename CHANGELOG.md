@@ -1,3 +1,12 @@
+## [0.34.6](https://github.com/openziti/ziti-browzer-sw/compare/v0.34.5...v0.34.6) (2023-09-18)
+
+
+### Bug Fixes
+
+* add 'worker-src' CSP handling ([#158](https://github.com/openziti/ziti-browzer-sw/issues/158)) ([70fb744](https://github.com/openziti/ziti-browzer-sw/commit/70fb74452cd031874a1055138bdcb42e78194602))
+
+
+
 ## [0.34.5](https://github.com/openziti/ziti-browzer-sw/compare/v0.34.4...v0.34.5) (2023-09-14)
 
 
