@@ -1,3 +1,12 @@
+# [0.36.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.35.0...v0.36.0) (2023-10-27)
+
+
+### Features
+
+* monitorix support ([#160](https://github.com/openziti/ziti-browzer-sw/issues/160)) ([8b64e9e](https://github.com/openziti/ziti-browzer-sw/commit/8b64e9eb2b9256355e8109396d8e95bc520a7d11))
+
+
+
 # [0.35.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.34.6...v0.35.0) (2023-10-23)
 
 
