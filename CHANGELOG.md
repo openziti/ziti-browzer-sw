@@ -1,3 +1,12 @@
+# [0.37.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.36.0...v0.37.0) (2023-10-30)
+
+
+### Features
+
+* Dual-mode: JSPI or NO_JSPI ([#161](https://github.com/openziti/ziti-browzer-sw/issues/161)) ([a1dbdc2](https://github.com/openziti/ziti-browzer-sw/commit/a1dbdc291181cc8a275326b4f80fb4af0c09d98f))
+
+
+
 # [0.36.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.35.0...v0.36.0) (2023-10-27)
 
 
