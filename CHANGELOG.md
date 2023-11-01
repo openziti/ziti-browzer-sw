@@ -1,3 +1,12 @@
+## [0.37.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.37.0...v0.37.1) (2023-11-01)
+
+
+### Bug Fixes
+
+* handle duplicate Set-Cookie headers from Icinga ([#162](https://github.com/openziti/ziti-browzer-sw/issues/162)) ([541c3dd](https://github.com/openziti/ziti-browzer-sw/commit/541c3dd08409f2e84855128da7d357dd9794508f))
+
+
+
 # [0.37.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.36.0...v0.37.0) (2023-10-30)
 
 
