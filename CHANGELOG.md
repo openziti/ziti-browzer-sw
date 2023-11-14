@@ -1,3 +1,12 @@
+## [0.37.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.37.1...v0.37.2) (2023-11-03)
+
+
+### Bug Fixes
+
+* ensure UA header is present (keep Observium happy) ([#163](https://github.com/openziti/ziti-browzer-sw/issues/163)) ([df30515](https://github.com/openziti/ziti-browzer-sw/commit/df305154b123d06baa73a208fb31dae6a7ac244c))
+
+
+
 ## [0.37.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.37.0...v0.37.1) (2023-11-01)
 
 
