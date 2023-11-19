@@ -1,3 +1,12 @@
+## [0.38.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.38.0...v0.38.1) (2023-11-19)
+
+
+### Bug Fixes
+
+* typos ([#165](https://github.com/openziti/ziti-browzer-sw/issues/165)) ([461cac4](https://github.com/openziti/ziti-browzer-sw/commit/461cac48f4efeac2873ce6c1cbabc3e758cf6cf9))
+
+
+
 # [0.38.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.37.2...v0.38.0) (2023-11-14)
 
 
