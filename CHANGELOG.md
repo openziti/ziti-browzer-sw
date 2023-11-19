@@ -1,3 +1,7 @@
+## [0.38.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.38.1...v0.38.2) (2023-11-19)
+
+
+
 ## [0.38.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.38.0...v0.38.1) (2023-11-19)
 
 
