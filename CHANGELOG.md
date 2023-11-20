@@ -1,3 +1,12 @@
+# [0.39.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.38.2...v0.39.0) (2023-11-20)
+
+
+### Features
+
+* Load Balancer support ([#166](https://github.com/openziti/ziti-browzer-sw/issues/166)) ([cc55105](https://github.com/openziti/ziti-browzer-sw/commit/cc5510568a491e3cd0a1f67137aeecc0b92f2ce3))
+
+
+
 ## [0.38.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.38.1...v0.38.2) (2023-11-19)
 
 
