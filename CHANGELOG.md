@@ -1,3 +1,12 @@
+## [0.39.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.39.0...v0.39.1) (2023-11-24)
+
+
+### Bug Fixes
+
+* handle port on bootstrapper URL ([#167](https://github.com/openziti/ziti-browzer-sw/issues/167)) ([0806d49](https://github.com/openziti/ziti-browzer-sw/commit/0806d492abf3702f3c6b32c3609d3cecec791c8c))
+
+
+
 # [0.39.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.38.2...v0.39.0) (2023-11-20)
 
 
