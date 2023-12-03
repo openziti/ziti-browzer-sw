@@ -11,6 +11,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _requestFailedWithNoResponse: (error: any) => Promise<unknown>;
   _noWSSRouters: (error: any) => Promise<unknown>;
   _xgressEvent: (event: any) => Promise<unknown>;
+  _nestedTLSHandshakeTimeout: (event: any) => Promise<unknown>;
   _logLevel: any;
   _logger: any;
   _core: ZitiBrowzerCore;
@@ -467,6 +468,23 @@ self._xgressEvent = async function ( event: any ) {
           event
         }
       } 
+    )
+  }
+}
+
+/**
+ * 
+ */
+ self._nestedTLSHandshakeTimeout = async function ( event: any ) {
+  const windows = await self.clients.matchAll({ type: 'window' })
+  for (const window of windows) {
+    window.postMessage(
+      {
+        type: 'NESTED_TLS_HANDSHAKE_TIMEOUT_EVENT',
+        payload: {
+          event
+        }
+      }
     )
   }
 }
