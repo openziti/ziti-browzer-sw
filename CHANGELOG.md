@@ -1,3 +1,12 @@
+## [0.41.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.41.0...v0.41.1) (2023-12-06)
+
+
+### Bug Fixes
+
+* loadBalancer url calc ([#170](https://github.com/openziti/ziti-browzer-sw/issues/170)) ([3096f89](https://github.com/openziti/ziti-browzer-sw/commit/3096f89ae8fab58bd214a70dc3a2bd771f044ee8))
+
+
+
 # [0.41.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.40.0...v0.41.0) (2023-12-06)
 
 
