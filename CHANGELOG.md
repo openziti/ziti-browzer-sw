@@ -1,3 +1,12 @@
+## [0.42.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.42.1...v0.42.2) (2023-12-12)
+
+
+### Bug Fixes
+
+* inject Keycloak early ([#173](https://github.com/openziti/ziti-browzer-sw/issues/173)) ([d71f935](https://github.com/openziti/ziti-browzer-sw/commit/d71f9357b649a6aaa7d1d0f623b04679f65127b3))
+
+
+
 ## [0.42.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.42.0...v0.42.1) (2023-12-12)
 
 
