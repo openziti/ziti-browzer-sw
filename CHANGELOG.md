@@ -1,3 +1,12 @@
+## [0.42.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.42.0...v0.42.1) (2023-12-12)
+
+
+### Bug Fixes
+
+* CSP for Keycloak ([#172](https://github.com/openziti/ziti-browzer-sw/issues/172)) ([1d4dc6e](https://github.com/openziti/ziti-browzer-sw/commit/1d4dc6ecd6f7bfb7ad179c60913e7b8dde11e5b0))
+
+
+
 # [0.42.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.41.1...v0.42.0) (2023-12-11)
 
 
