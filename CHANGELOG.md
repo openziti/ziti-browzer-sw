@@ -1,3 +1,12 @@
+## [0.42.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.42.2...v0.42.3) (2023-12-13)
+
+
+### Bug Fixes
+
+* add controller and bootstrapper to 'connect-src' CSP ([#174](https://github.com/openziti/ziti-browzer-sw/issues/174)) ([0bf2208](https://github.com/openziti/ziti-browzer-sw/commit/0bf22084845e6d9f5bd78004a8fa5c9e4b17a939))
+
+
+
 ## [0.42.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.42.1...v0.42.2) (2023-12-12)
 
 
