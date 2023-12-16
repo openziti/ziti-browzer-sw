@@ -1,3 +1,12 @@
+# [0.43.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.42.3...v0.43.0) (2023-12-16)
+
+
+### Features
+
+* Emscripten 3.1.51 ([#175](https://github.com/openziti/ziti-browzer-sw/issues/175)) ([34f80d1](https://github.com/openziti/ziti-browzer-sw/commit/34f80d1cb33575796b5bb90f808ad34225442892))
+
+
+
 ## [0.42.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.42.2...v0.42.3) (2023-12-13)
 
 
