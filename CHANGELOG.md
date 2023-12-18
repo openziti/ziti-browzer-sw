@@ -1,3 +1,12 @@
+## [0.43.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.43.0...v0.43.1) (2023-12-18)
+
+
+### Bug Fixes
+
+* img fetch/render broken due to CSP misalignment ([#176](https://github.com/openziti/ziti-browzer-sw/issues/176)) ([7eda635](https://github.com/openziti/ziti-browzer-sw/commit/7eda63501c751406fdc6b4803e6118615005f63f))
+
+
+
 # [0.43.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.42.3...v0.43.0) (2023-12-16)
 
 
