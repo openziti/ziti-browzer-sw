@@ -12,6 +12,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _noWSSRouters: (error: any) => Promise<unknown>;
   _xgressEvent: (event: any) => Promise<unknown>;
   _nestedTLSHandshakeTimeout: (event: any) => Promise<unknown>;
+  _sendLogMessage: (event: any) => Promise<unknown>;
   _logLevel: any;
   _logger: any;
   _core: ZitiBrowzerCore;
@@ -21,6 +22,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _cookieObject: any;
   _zbrReloadPending: boolean;
   _zbrPingTimestamp: any;
+  _eruda: boolean;
 }
 
 declare const self: zitiBrowzerServiceWorkerGlobalScope;
@@ -42,9 +44,17 @@ import pjson from '../package.json';
  */
 self._uuid = uuidv4();
 self._core = new ZitiBrowzerCore({});
+let erudaSpecification = new URLSearchParams(location.search).get("eruda");
+self._eruda = false;
+if (erudaSpecification && (erudaSpecification === 'true')) { 
+  self._eruda = true;
+}
+
 self._logger = self._core.createZitiLogger({
   logLevel: new URLSearchParams(location.search).get("logLevel") || 'Silent',
-  suffix: 'ZBSW'
+  suffix: 'ZBSW',
+  useSWPostMessage: self._eruda,
+  zitiBrowzerServiceWorkerGlobalScope: self,
 });
 self._cookieObject = {};
 self._logger.trace(`main sw starting for UUID: `, self._uuid);
@@ -55,6 +65,7 @@ let zfs = new ZitiFirstStrategy(
     zitiBrowzerServiceWorkerGlobalScope: self,
     logLevel:       new URLSearchParams(location.search).get("logLevel")      || 'Silent',
     controllerApi:  new URLSearchParams(location.search).get("controllerApi") || undefined,
+    eruda: self._eruda,
 
     cacheName:      'ziti-browzer-cache',
 
@@ -481,6 +492,23 @@ self._xgressEvent = async function ( event: any ) {
     window.postMessage(
       {
         type: 'NESTED_TLS_HANDSHAKE_TIMEOUT_EVENT',
+        payload: {
+          event
+        }
+      }
+    )
+  }
+}
+
+/**
+ * 
+ */
+self._sendLogMessage = async function ( event: any ) {
+  const windows = await self.clients.matchAll({ type: 'window' })
+  for (const window of windows) {
+    window.postMessage(
+      {
+        type: 'LOG_MESSAGE_EVENT',
         payload: {
           event
         }
