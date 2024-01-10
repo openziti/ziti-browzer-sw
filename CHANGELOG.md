@@ -1,3 +1,12 @@
+## [0.45.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.45.2...v0.45.3) (2024-01-10)
+
+
+### Bug Fixes
+
+* use self.skipWaiting() to prevent stalled SW during activation ([#181](https://github.com/openziti/ziti-browzer-sw/issues/181)) ([b2dda26](https://github.com/openziti/ziti-browzer-sw/commit/b2dda2677dade4d95aedc57ea58dc250333d6914))
+
+
+
 ## [0.45.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.45.1...v0.45.2) (2024-01-08)
 
 
