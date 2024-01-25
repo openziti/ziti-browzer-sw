@@ -1,3 +1,12 @@
+## [0.46.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.46.0...v0.46.1) (2024-01-25)
+
+
+### Bug Fixes
+
+* call 'skipWaiting' on init events ([#184](https://github.com/openziti/ziti-browzer-sw/issues/184)) ([0c9e410](https://github.com/openziti/ziti-browzer-sw/commit/0c9e410459ae3def9eafd3523ad52bd105f601d7))
+
+
+
 # [0.46.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.45.4...v0.46.0) (2024-01-25)
 
 
