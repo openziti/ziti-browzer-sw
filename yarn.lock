@@ -31,10 +31,10 @@
     "@types/emscripten" "^1.39.6"
     "@wasmer/wasi" "^1.0.2"
 
-"@openziti/ziti-browzer-core@^0.35.4":
-  version "0.35.4"
-  resolved "https://registry.yarnpkg.com/@openziti/ziti-browzer-core/-/ziti-browzer-core-0.35.4.tgz#122cf384c6a9bed0c3d8dc180aea9cf06c3170bb"
-  integrity sha512-I/8aDVpOh+XFXyop4I/5fsmwuWUPPIo1boQy2rsPjqv893DeoYJOH8BTavg04BRh3hvrWxVxulO8kqaj6n5ucA==
+"@openziti/ziti-browzer-core@^0.36.0":
+  version "0.36.0"
+  resolved "https://registry.yarnpkg.com/@openziti/ziti-browzer-core/-/ziti-browzer-core-0.36.0.tgz#5bfa4c5a3bc9927dd0949756db1adaf81faa669d"
+  integrity sha512-tzzeXDIkMw1wVBtmkxqGF9QXuUUH0QE9QeDlIvMdCUfL3V/YeXv+PFLWPM4b72LdCCiFZxTQNVYEw0E/pohwbA==
   dependencies:
     "@openziti/libcrypto-js" "^0.19.0"
     "@openziti/ziti-browzer-edge-client" "^0.6.2"
@@ -45,6 +45,7 @@
     buffer "^6.0.3"
     bufferutil "^4.0.6"
     chnl "^1.2.0"
+    elapsed-time "^0.0.1"
     es6-object-assign "^1.1.0"
     events "^3.3.0"
     fast-memoize "^2.5.2"
@@ -81,12 +82,12 @@
   dependencies:
     superagent "^7.1.3"
 
-"@openziti/ziti-browzer-sw-workbox-strategies@^0.47.3":
-  version "0.47.3"
-  resolved "https://registry.yarnpkg.com/@openziti/ziti-browzer-sw-workbox-strategies/-/ziti-browzer-sw-workbox-strategies-0.47.3.tgz#fb59010c78c1eb46c73e1acb823ccaec0dd1f4df"
-  integrity sha512-98TW9qjgXUrEkGBUulad9hL89EpG4lRnEjM+KyRqcAeJelb3zryly0qvoi+Mlmblffv+XvymfrvObGE6/jOtOQ==
+"@openziti/ziti-browzer-sw-workbox-strategies@^0.48.0":
+  version "0.48.0"
+  resolved "https://registry.yarnpkg.com/@openziti/ziti-browzer-sw-workbox-strategies/-/ziti-browzer-sw-workbox-strategies-0.48.0.tgz#465f3be7564484bb6d3c7366ff3c323d2fa91bce"
+  integrity sha512-FkNtZvP7WtxkJYt7fotgK7ngL+1ELGqrkDH+s0T+KILz86Oe6GXiXphYNkE3bC60FaMgrx4WL9+ssEfM5ZSSqg==
   dependencies:
-    "@openziti/ziti-browzer-core" "^0.35.4"
+    "@openziti/ziti-browzer-core" "^0.36.0"
     async-mutex "^0.3.2"
     cheerio "^1.0.0-rc.12"
     jwt-decode "^3.1.2"
@@ -282,6 +283,13 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
+babel-runtime@^5.8.20:
+  version "5.8.38"
+  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-5.8.38.tgz#1c0b02eb63312f5f087ff20450827b425c9d4c19"
+  integrity sha512-KpgoA8VE/pMmNCrnEeeXqFG24TIH11Z3ZaimIhJWsin8EbfZy3WzFKUTIan10ZIDgRVvi9EkLbruJElJC9dRlg==
+  dependencies:
+    core-js "^1.0.0"
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
@@ -311,6 +319,11 @@ brace-expansion@^2.0.1:
   integrity sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==
   dependencies:
     balanced-match "^1.0.0"
+
+browser-process-hrtime@^0.1.2:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/browser-process-hrtime/-/browser-process-hrtime-0.1.3.tgz#616f00faef1df7ec1b5bf9cfe2bdc3170f26c7b4"
+  integrity sha512-bRFnI4NnjO6cnyLmOV/7PVoDEMJChlcfN0z4s1YMBY989/SvlfMI1lgCnkFUs53e9gQF+w7qu7XdllSTiSl8Aw==
 
 buffer-from@^1.0.0:
   version "1.1.2"
@@ -465,6 +478,11 @@ cookiejar@^2.1.3:
   resolved "https://registry.yarnpkg.com/cookiejar/-/cookiejar-2.1.3.tgz#fc7a6216e408e74414b90230050842dacda75acc"
   integrity sha512-JxbCBUdrfr6AQjOXrxoTvAMJO4HBTUIlBzslcJPAz+/KT8yk53fXun51u+RenNYvad/+Vc2DIz5o9UxlCDymFQ==
 
+core-js@^1.0.0:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
+  integrity sha512-ZiPp9pZlgxpWRu0M+YWbm6+aQ84XEfH1JRXvfOc/fILWI0VKhLC2LX13X1NYq4fULzLMq7Hfh43CSo2/aIaUPA==
+
 core-util-is@~1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.3.tgz#a6042d3634c2b27e9328f837b965fac83808db85"
@@ -565,6 +583,14 @@ ejs@^3.1.6:
   integrity sha512-BIar7R6abbUxDA3bfXrO4DSgwo8I+fB5/1zgujl3HLLjwd6+9iOnrT+t3grn2qbk9vOgBubXOFwX2m9axoFaGw==
   dependencies:
     jake "^10.8.5"
+
+elapsed-time@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/elapsed-time/-/elapsed-time-0.0.1.tgz#f91e333a25ce1201ed81c233f8a9ee40d427cd86"
+  integrity sha512-RIQSJpq2El7Vnh3X35//HunSwUF2ByscTe7/vPdVsUeKAS20lkf8rr6zqIE5MJ3pkDCxgYLfo0dYond5zqm4Pg==
+  dependencies:
+    babel-runtime "^5.8.20"
+    browser-process-hrtime "^0.1.2"
 
 emitter-component@^1.1.1:
   version "1.1.1"
