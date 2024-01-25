@@ -39,8 +39,6 @@ import { v4 as uuidv4 } from 'uuid';
 import pjson from '../package.json';
 
 
-self.skipWaiting();
-
 /**
  * 
  */
@@ -188,6 +186,12 @@ registerRoute(
 
 clientsClaim();
 
+self.addEventListener('install', (event) => {
+  self._logger.trace(`'install' received`);
+  self.skipWaiting();
+});
+
+
 /**
  * 
  */
@@ -197,6 +201,7 @@ self.addEventListener('message', async (event) => {
    * 
    */
   if (event.data.type === 'GET_VERSION') {
+    self.skipWaiting();
     self._logger.trace(`message.GET_VERSION received`);
     event.ports[0].postMessage({
       version: pjson.version,
@@ -208,6 +213,7 @@ self.addEventListener('message', async (event) => {
    * 
    */
   else if (event.data.type === 'SET_CONFIG') {
+    self.skipWaiting();
     self._logger.trace(`message.SET_CONFIG received, payload is: `, event.data.payload);
     self._zitiConfig = event.data.payload.zitiConfig;
     self._logger.trace(`message.SET_CONFIG set for UUID: `, self._uuid);
