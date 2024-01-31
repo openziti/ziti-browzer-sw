@@ -75,8 +75,8 @@ let zfs = new ZitiFirstStrategy(
         // Cap the number of items we cache
         maxEntries: 1000,
         
-        // Don't keep any items for more than 30 days
-        maxAgeSeconds: 30 * 24 * 60 * 60,
+        // Don't keep any items for more than 7 days
+        maxAgeSeconds: 7 * 24 * 60 * 60,
 
         // Automatically cleanup if cache quota is exceeded
         purgeOnQuotaError: false
