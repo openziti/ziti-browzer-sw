@@ -1,3 +1,12 @@
+## [0.46.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.46.1...v0.46.2) (2024-01-31)
+
+
+### Bug Fixes
+
+* do not cache JSON content ([#185](https://github.com/openziti/ziti-browzer-sw/issues/185)) ([08e34c1](https://github.com/openziti/ziti-browzer-sw/commit/08e34c126a34e4a73492ce6952e2a294ddf8e949))
+
+
+
 ## [0.46.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.46.0...v0.46.1) (2024-01-25)
 
 
