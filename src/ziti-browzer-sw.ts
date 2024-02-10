@@ -31,7 +31,6 @@ import {cleanupOutdatedCaches} from 'workbox-precaching';
 import {ExpirationPlugin} from 'workbox-expiration';
 import {registerRoute, setCatchHandler} from 'workbox-routing';
 import {clientsClaim} from 'workbox-core';
-import {URLPattern} from 'urlpattern-polyfill';
 import {ZitiFirstStrategy} from '@openziti/ziti-browzer-sw-workbox-strategies';
 import { ZitiBrowzerCore } from '@openziti/ziti-browzer-core';
 import { v4 as uuidv4 } from 'uuid';
@@ -98,6 +97,9 @@ let zfs = new ZitiFirstStrategy(
 
 const matchGETCb = (url:any, request:any) => {
   let getURL = new URL(url);
+  if (getURL.pathname.includes(".well-known/openid-configuration")) {
+    return false;
+  }
   if (getURL.pathname.includes("browzer_error")) {
     return false;
   }
