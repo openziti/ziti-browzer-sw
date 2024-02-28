@@ -1,3 +1,12 @@
+## [0.48.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.48.2...v0.48.3) (2024-02-28)
+
+
+### Bug Fixes
+
+* ECS tweak ([#191](https://github.com/openziti/ziti-browzer-sw/issues/191)) ([10190a5](https://github.com/openziti/ziti-browzer-sw/commit/10190a59bd74a7c6ded4b4bbb90e417deca6fac3))
+
+
+
 ## [0.48.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.48.1...v0.48.2) (2024-02-22)
 
 
