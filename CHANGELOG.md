@@ -1,3 +1,12 @@
+## [0.48.4](https://github.com/openziti/ziti-browzer-sw/compare/v0.48.3...v0.48.4) (2024-02-28)
+
+
+### Bug Fixes
+
+* relative path redirect tweak ([#192](https://github.com/openziti/ziti-browzer-sw/issues/192)) ([2aac384](https://github.com/openziti/ziti-browzer-sw/commit/2aac384c2d00392daed93638c6d93b947d1d1414))
+
+
+
 ## [0.48.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.48.2...v0.48.3) (2024-02-28)
 
 
