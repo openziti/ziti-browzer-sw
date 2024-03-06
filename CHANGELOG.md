@@ -1,3 +1,12 @@
+## [0.50.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.50.0...v0.50.1) (2024-03-06)
+
+
+### Bug Fixes
+
+* match redirects with serviceConnectAppData.dst_ip ([#195](https://github.com/openziti/ziti-browzer-sw/issues/195)) ([6e40aba](https://github.com/openziti/ziti-browzer-sw/commit/6e40aba9d401569264089bd329b6950007dfa225))
+
+
+
 # [0.50.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.49.0...v0.50.0) (2024-03-05)
 
 
