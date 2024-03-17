@@ -1,3 +1,12 @@
+## [0.50.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.50.2...v0.50.3) (2024-03-17)
+
+
+### Bug Fixes
+
+* non-default lb+bootstrapper port handling ([#197](https://github.com/openziti/ziti-browzer-sw/issues/197)) ([2da9ff8](https://github.com/openziti/ziti-browzer-sw/commit/2da9ff868d127d0ef90b8753b6d4a85da622f000))
+
+
+
 ## [0.50.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.50.1...v0.50.2) (2024-03-15)
 
 
