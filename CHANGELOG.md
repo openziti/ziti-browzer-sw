@@ -1,3 +1,12 @@
+## [0.50.6](https://github.com/openziti/ziti-browzer-sw/compare/v0.50.5...v0.50.6) (2024-03-20)
+
+
+### Bug Fixes
+
+* inaccurate oauth2 callback parameters matching in matchGetCb ([#201](https://github.com/openziti/ziti-browzer-sw/issues/201)) ([45f0365](https://github.com/openziti/ziti-browzer-sw/commit/45f0365bc1edad614df33997eb2c67fc0bb61279))
+
+
+
 ## [0.50.5](https://github.com/openziti/ziti-browzer-sw/compare/v0.50.4...v0.50.5) (2024-03-18)
 
 
