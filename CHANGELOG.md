@@ -1,3 +1,12 @@
+# [0.51.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.50.7...v0.51.0) (2024-03-31)
+
+
+### Features
+
+* Blueframe support ([#203](https://github.com/openziti/ziti-browzer-sw/issues/203)) ([eb03357](https://github.com/openziti/ziti-browzer-sw/commit/eb033573c9b26da980aa65c172423c0d6a6cc41b))
+
+
+
 ## [0.50.7](https://github.com/openziti/ziti-browzer-sw/compare/v0.50.6...v0.50.7) (2024-03-21)
 
 
