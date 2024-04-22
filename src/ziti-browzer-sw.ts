@@ -1,6 +1,7 @@
 interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _sendMessageToClients: (message: any) => Promise<unknown>;
   _unregister: () => Promise<unknown>;
+  _unregisterNoReload: () => void;
   _accessTokenExpired: () => Promise<unknown>;
   _pingPage: () => Promise<unknown>;
   _noConfigForService: (serviceName: any) => Promise<unknown>;
@@ -296,6 +297,15 @@ self._unregister = async function (  ) {
     )
   }
   self._logger.trace(`_unregister completed `);
+}
+
+/**
+ * 
+ */
+self._unregisterNoReload = function (  ) {
+  self._logger.trace(`_unregisterNoReload starting `);
+  self.registration.unregister();
+  self._logger.trace(`_unregisterNoReload completed `);
 }
 
 /**
