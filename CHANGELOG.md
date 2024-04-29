@@ -1,3 +1,12 @@
+# [0.53.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.52.1...v0.53.0) (2024-04-29)
+
+
+### Features
+
+* New Settings Dlg (with 'Changelog' and 'Feedback' widgets) ([#206](https://github.com/openziti/ziti-browzer-sw/issues/206)) ([7d89336](https://github.com/openziti/ziti-browzer-sw/commit/7d89336c5be7a9ead5030d87c07722c4acd3ea97))
+
+
+
 ## [0.52.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.52.0...v0.52.1) (2024-04-22)
 
 
