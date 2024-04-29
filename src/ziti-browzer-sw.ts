@@ -102,6 +102,9 @@ const matchGETCb = (url:any, request:any) => {
   if (getURL.pathname.includes(".well-known/openid-configuration")) {
     return false;
   }
+  if (getURL.pathname.includes("ziti-browzer-latest-release-version")) {
+    return false;
+  }
   if (getURL.pathname.includes("browzer_error")) {
     return false;
   }
