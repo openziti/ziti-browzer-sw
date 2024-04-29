@@ -1,3 +1,12 @@
+# [0.54.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.53.0...v0.54.0) (2024-04-29)
+
+
+### Features
+
+* adjust CI/runtime to use hash-bundle name for browZer CSS ([#207](https://github.com/openziti/ziti-browzer-sw/issues/207)) ([b8e0ada](https://github.com/openziti/ziti-browzer-sw/commit/b8e0ada1d2127e9a51b43a752dd6bdaa1997e1e3))
+
+
+
 # [0.53.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.52.1...v0.53.0) (2024-04-29)
 
 
