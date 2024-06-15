@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@openziti/ziti-browzer-sw-workbox-strategies": "^0.56.2",
-    "@types/lodash-es": "^4.17.6",
+    "@types/lodash-es": "^4.17.12",
     "workbox-core": "^6.5.3",
     "workbox-expiration": "^6.5.0",
     "workbox-precaching": "^6.5.0",
