@@ -884,6 +884,11 @@ idb@^6.1.4:
   resolved "https://registry.yarnpkg.com/idb/-/idb-6.1.5.tgz#dbc53e7adf1ac7c59f9b2bf56e00b4ea4fce8c7b"
   integrity sha512-IJtugpKkiVXQn5Y+LteyBCNk1N8xpGV3wWZk9EVtZWH8DYkjBn0bX1XnGP9RkyZF0sAcywa6unHqSWKe7q4LGw==
 
+idb@^7.0.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/idb/-/idb-7.1.1.tgz#d910ded866d32c7ced9befc5bfdf36f572ced72b"
+  integrity sha512-gchesWBzyvGHRO9W8tzUWFDycow5gwjvFKfyV9FF32Y7F50yZMp7mP+T2mJIWFx49zicqyC4uefHM17o6xKIVQ==
+
 ieee754@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
@@ -1886,13 +1891,10 @@ workbox-core@6.5.3, workbox-core@^6.5.3:
   resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-6.5.3.tgz#bca038a9ef0d7a634a6db2a60f45313ed22ac249"
   integrity sha512-Bb9ey5n/M9x+l3fBTlLpHt9ASTzgSGj6vxni7pY72ilB/Pb3XtN+cZ9yueboVhD5+9cNQrC9n/E1fSrqWsUz7Q==
 
-workbox-expiration@^6.5.0:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/workbox-expiration/-/workbox-expiration-6.5.2.tgz#ee6ed755a220a0b375d67831f9237e4dcbccb59c"
-  integrity sha512-5Hfp0uxTZJrgTiy9W7AjIIec+9uTOtnxY/tRBm4DbqcWKaWbVTa+izrKzzOT4MXRJJIJUmvRhWw4oo8tpmMouw==
-  dependencies:
-    idb "^6.1.4"
-    workbox-core "6.5.2"
+workbox-core@6.6.1:
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-6.6.1.tgz#7184776d4134c5ed2f086878c882728fc9084265"
+  integrity sha512-ZrGBXjjaJLqzVothoE12qTbVnOAjFrHDXpZe7coCb6q65qI/59rDLwuFMO4PcZ7jcbxY+0+NhUVztzR/CbjEFw==
 
 workbox-expiration@^6.5.3:
   version "6.5.3"
@@ -1901,6 +1903,14 @@ workbox-expiration@^6.5.3:
   dependencies:
     idb "^6.1.4"
     workbox-core "6.5.3"
+
+workbox-expiration@^6.6.0:
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/workbox-expiration/-/workbox-expiration-6.6.1.tgz#a841fa36676104426dbfb9da1ef6a630b4f93739"
+  integrity sha512-qFiNeeINndiOxaCrd2DeL1Xh1RFug3JonzjxUHc5WkvkD2u5abY3gZL1xSUNt3vZKsFFGGORItSjVTVnWAZO4A==
+  dependencies:
+    idb "^7.0.1"
+    workbox-core "6.6.1"
 
 workbox-precaching@^6.5.0:
   version "6.5.2"
