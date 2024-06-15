@@ -37,7 +37,7 @@
     "@types/lodash-es": "^4.17.6",
     "workbox-core": "^6.5.3",
     "workbox-expiration": "^6.5.0",
-    "workbox-precaching": "^6.5.0",
+    "workbox-precaching": "^6.6.0",
     "workbox-routing": "^6.5.3",
     "workbox-strategies": "^6.5.3"
   },
