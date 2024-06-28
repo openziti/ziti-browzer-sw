@@ -1,3 +1,12 @@
+## [0.54.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.54.2...v0.54.3) (2024-06-28)
+
+
+### Bug Fixes
+
+* send chunked WebSocket frames in a single write (prevent RSV2/3 errs) ([#214](https://github.com/openziti/ziti-browzer-sw/issues/214)) ([a1d9e56](https://github.com/openziti/ziti-browzer-sw/commit/a1d9e56922618911a6cbb8889e332f52b5fee328))
+
+
+
 ## [0.54.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.54.1...v0.54.2) (2024-05-22)
 
 
