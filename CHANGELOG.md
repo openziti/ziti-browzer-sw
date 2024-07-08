@@ -1,3 +1,12 @@
+## [0.54.5](https://github.com/openziti/ziti-browzer-sw/compare/v0.54.4...v0.54.5) (2024-07-08)
+
+
+### Bug Fixes
+
+* remove obsolete hotkey/modal ([#216](https://github.com/openziti/ziti-browzer-sw/issues/216)) ([a0bc714](https://github.com/openziti/ziti-browzer-sw/commit/a0bc7144c3f63f9481a2eae4880cddb264f3a104))
+
+
+
 ## [0.54.4](https://github.com/openziti/ziti-browzer-sw/compare/v0.54.3...v0.54.4) (2024-07-02)
 
 
