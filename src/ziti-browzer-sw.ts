@@ -7,6 +7,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _noConfigForService: (serviceName: any) => Promise<unknown>;
   _noConfigProtocolForService: (serviceName: any) => Promise<unknown>;
   _sessionCreationError: (error: any) => Promise<unknown>;
+  _wssERConnectionError: (error: any) => Promise<unknown>;
   _noService: (error: any) => Promise<unknown>;
   _invalidAuth: (error: any) => Promise<unknown>;
   _channelConnectFail: (error: any) => Promise<unknown>;
@@ -393,6 +394,25 @@ self._pingPage = async function (  ) {
     )
   }
   self._logger.trace(`_noConfigProtocolForService completed `);
+}
+
+/**
+ * 
+ */
+ self._wssERConnectionError = async function ( event: any ) {
+  self._logger.trace(`_wssERConnectionError starting `);
+  const windows = await self.clients.matchAll({ type: 'window' })
+  for (const window of windows) {
+    window.postMessage(
+      { 
+        type: 'WSS_ROUTER_CONNECTION_ERROR',
+        payload: {
+          event
+        }
+      } 
+    )
+  }
+  self._logger.trace(`_wssERConnectionError completed `);
 }
 
 /**
