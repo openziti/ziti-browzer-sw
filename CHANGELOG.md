@@ -1,3 +1,12 @@
+# [0.56.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.55.0...v0.56.0) (2024-07-12)
+
+
+### Features
+
+* new throughput chart in browZer tools ([#218](https://github.com/openziti/ziti-browzer-sw/issues/218)) ([da26851](https://github.com/openziti/ziti-browzer-sw/commit/da26851fd63a28cfdaad99137661557010979d0b))
+
+
+
 # [0.55.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.54.5...v0.55.0) (2024-07-09)
 
 
