@@ -112,7 +112,9 @@ const matchGETCb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
     return true;
   }
-  if (getURL.searchParams.get("code") && getURL.searchParams.get("state")) {
+
+  if (getURL.searchParams.get("code") && getURL.searchParams.get("state") &&
+      getURL.pathname !== self._zitiConfig.idp.nested_sso_inner_cb_path) {
     return false;
   }
   let controllerURL = new URL(self._zitiConfig.controller.api);
