@@ -1,3 +1,12 @@
+## [0.57.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.57.0...v0.57.1) (2024-08-06)
+
+
+### Bug Fixes
+
+* add controller to 'CSP connect-src' if present ([#221](https://github.com/openziti/ziti-browzer-sw/issues/221)) ([53bb7d8](https://github.com/openziti/ziti-browzer-sw/commit/53bb7d8e34550a4257b70b7e389c1b3f7a6703a8))
+
+
+
 # [0.57.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.56.0...v0.57.0) (2024-08-02)
 
 
