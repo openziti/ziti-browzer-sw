@@ -113,8 +113,12 @@ const matchGETCb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
     return true;
   }
-  if (getURL.searchParams.get("code") && getURL.searchParams.get("state")) {
-    return false;
+  if (getURL.searchParams.get("code") && getURL.searchParams.get("state")) {    // possible IdP-related URL
+    if (getURL.hostname === self._zitiConfig.browzer.bootstrapper.self.host) {  // ..but if hitting the protected web app itself
+      return true;                                                              // ..then let it go over Ziti
+    } else {
+      return false;                                                             // ..otherwise, route over raw internet since it's IdP-related
+    }
   }
   let controllerURL = new URL(self._zitiConfig.controller.api);
   if (url.hostname === controllerURL.hostname) {
