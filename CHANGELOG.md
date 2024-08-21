@@ -1,3 +1,12 @@
+# [0.58.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.57.1...v0.58.0) (2024-08-21)
+
+
+### Features
+
+* HomeAssistant support: various URL intercept, WebSocket and XHR tweaks ([#222](https://github.com/openziti/ziti-browzer-sw/issues/222)) ([511ba4f](https://github.com/openziti/ziti-browzer-sw/commit/511ba4fc86b02dd480b43ea20fb2c29d594717dc))
+
+
+
 ## [0.57.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.57.0...v0.57.1) (2024-08-06)
 
 
