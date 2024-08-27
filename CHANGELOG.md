@@ -1,3 +1,12 @@
+# [0.60.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.59.0...v0.60.0) (2024-08-27)
+
+
+### Features
+
+* Do not attempt to wrap/stream the Body of a 204 Response ([#224](https://github.com/openziti/ziti-browzer-sw/issues/224)) ([b09f066](https://github.com/openziti/ziti-browzer-sw/commit/b09f066f83c6aa38e54d775d656605efe6f18092))
+
+
+
 # [0.59.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.58.0...v0.59.0) (2024-08-26)
 
 
