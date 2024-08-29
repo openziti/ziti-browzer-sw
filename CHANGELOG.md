@@ -1,3 +1,12 @@
+# [0.61.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.60.0...v0.61.0) (2024-08-29)
+
+
+### Features
+
+* Use Cert chain when in HA networks ([#225](https://github.com/openziti/ziti-browzer-sw/issues/225)) ([1c1a5f0](https://github.com/openziti/ziti-browzer-sw/commit/1c1a5f04882918b73c369f73a1190f4d929002d8))
+
+
+
 # [0.60.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.59.0...v0.60.0) (2024-08-27)
 
 
