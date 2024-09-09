@@ -1,3 +1,12 @@
+# [0.62.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.61.0...v0.62.0) (2024-09-09)
+
+
+### Features
+
+* HA network detection, and authentication ([#226](https://github.com/openziti/ziti-browzer-sw/issues/226)) ([055f51e](https://github.com/openziti/ziti-browzer-sw/commit/055f51e09f191cb934f2b08a85693646c2ca8e4d))
+
+
+
 # [0.61.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.60.0...v0.61.0) (2024-08-29)
 
 
