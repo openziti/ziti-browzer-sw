@@ -1,3 +1,12 @@
+# [0.64.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.63.0...v0.64.0) (2024-09-26)
+
+
+### Features
+
+* don't evaporate Angular-specific attributes during HTML streaming ([#228](https://github.com/openziti/ziti-browzer-sw/issues/228)) ([d2a9cc6](https://github.com/openziti/ziti-browzer-sw/commit/d2a9cc69c9c9adef32c1c1c1c30427f785d962b0))
+
+
+
 # [0.63.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.62.0...v0.63.0) (2024-09-24)
 
 
