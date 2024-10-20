@@ -142,6 +142,9 @@ const matchPOSTCb = (url:any, request:any) => {
   }
   if (url.hostname === self._zitiConfig.browzer.bootstrapper.self.host) {
     return true;
+  }
+  else if (url.hostname === self._zitiConfig.browzer.bootstrapper.target.service) {
+      return true;
   } else {
     return false;
   }
