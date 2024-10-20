@@ -1,3 +1,12 @@
+# [0.66.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.65.0...v0.66.0) (2024-10-20)
+
+
+### Features
+
+* introduce 'target host transformer' to gzip inflator ([#230](https://github.com/openziti/ziti-browzer-sw/issues/230)) ([0d05861](https://github.com/openziti/ziti-browzer-sw/commit/0d058618064b6225628b221b377aab7f549b3de0))
+
+
+
 # [0.65.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.64.0...v0.65.0) (2024-10-08)
 
 
