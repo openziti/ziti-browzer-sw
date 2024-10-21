@@ -1,3 +1,12 @@
+# [0.68.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.67.0...v0.68.0) (2024-10-21)
+
+
+### Features
+
+* handle null targetServiceAppData ([#232](https://github.com/openziti/ziti-browzer-sw/issues/232)) ([8b42356](https://github.com/openziti/ziti-browzer-sw/commit/8b4235698fd95088f32c76f02970e23dc411559b))
+
+
+
 # [0.67.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.66.0...v0.67.0) (2024-10-21)
 
 
