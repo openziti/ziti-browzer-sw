@@ -1,3 +1,12 @@
+# [0.70.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.69.0...v0.70.0) (2024-11-20)
+
+
+### Features
+
+* CSP 'font-src' tweak (add 'data:') ([#234](https://github.com/openziti/ziti-browzer-sw/issues/234)) ([2fa3a10](https://github.com/openziti/ziti-browzer-sw/commit/2fa3a10c7d5e0815c9d267618b6685bcd725c58b))
+
+
+
 # [0.69.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.68.0...v0.69.0) (2024-11-01)
 
 
