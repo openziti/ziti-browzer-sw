@@ -1,3 +1,12 @@
+# [0.71.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.70.0...v0.71.0) (2024-12-11)
+
+
+### Features
+
+* Null ptr while handling service app-connect data results in 500 Response ([#235](https://github.com/openziti/ziti-browzer-sw/issues/235)) ([c726df8](https://github.com/openziti/ziti-browzer-sw/commit/c726df86eb868d7498f895806850857e816e8f8a))
+
+
+
 # [0.70.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.69.0...v0.70.0) (2024-11-20)
 
 
