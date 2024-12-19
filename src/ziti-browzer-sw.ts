@@ -121,7 +121,7 @@ const matchGETCb = (url:any, request:any) => {
     }
   }
   let controllerURL = new URL(self._zitiConfig.controller.api);
-  if (url.hostname === controllerURL.hostname) {
+  if ((url.hostname === controllerURL.hostname) && (url.port === controllerURL.port)) {
     return false;
   } else {
     return true;
