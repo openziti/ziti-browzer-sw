@@ -1,3 +1,12 @@
+# [0.72.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.71.0...v0.72.0) (2024-12-19)
+
+
+### Features
+
+* Make ZAC served from Controller's /zac binding work under browZer ([#236](https://github.com/openziti/ziti-browzer-sw/issues/236)) ([30d0e7a](https://github.com/openziti/ziti-browzer-sw/commit/30d0e7af886f2c1e3773d18b4945e7b3964435f1))
+
+
+
 # [0.71.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.70.0...v0.71.0) (2024-12-11)
 
 
