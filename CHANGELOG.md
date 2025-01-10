@@ -1,3 +1,12 @@
+## [0.72.2](https://github.com/openziti/ziti-browzer-sw/compare/v0.72.1...v0.72.2) (2025-01-10)
+
+
+### Bug Fixes
+
+* Bogus access_token from Entra can cause PKCE redirect loop in ZBR ([#238](https://github.com/openziti/ziti-browzer-sw/issues/238)) ([18b973d](https://github.com/openziti/ziti-browzer-sw/commit/18b973df2dbfbf9bb6605fcaa7ce8919b4ee1022))
+
+
+
 ## [0.72.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.72.0...v0.72.1) (2025-01-09)
 
 
