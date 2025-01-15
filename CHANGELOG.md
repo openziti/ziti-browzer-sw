@@ -1,3 +1,12 @@
+## [0.72.4](https://github.com/openziti/ziti-browzer-sw/compare/v0.72.3...v0.72.4) (2025-01-15)
+
+
+### Bug Fixes
+
+* POST via fetch to private API listening on HTTPS fails ([#240](https://github.com/openziti/ziti-browzer-sw/issues/240)) ([cc98b3b](https://github.com/openziti/ziti-browzer-sw/commit/cc98b3b09447fad48f267681fd6b8845cd9640ba))
+
+
+
 ## [0.72.3](https://github.com/openziti/ziti-browzer-sw/compare/v0.72.2...v0.72.3) (2025-01-15)
 
 
