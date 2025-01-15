@@ -140,6 +140,11 @@ const matchPOSTCb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
     return false;
   }
+  let postURL = new URL(url);
+  let controllerURL = new URL(self._zitiConfig.controller.api);
+  if ((postURL.hostname === controllerURL.hostname) && (postURL.port === controllerURL.port)) {
+    return false;
+  } 
   return true;
 };
 
