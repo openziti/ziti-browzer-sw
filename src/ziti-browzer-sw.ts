@@ -140,14 +140,7 @@ const matchPOSTCb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
     return false;
   }
-  if (url.hostname === self._zitiConfig.browzer.bootstrapper.self.host) {
-    return true;
-  }
-  else if (url.hostname === self._zitiConfig.browzer.bootstrapper.target.service) {
-      return true;
-  } else {
-    return false;
-  }
+  return true;
 };
 
 registerRoute(
@@ -158,11 +151,7 @@ const matchPUTCb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
     return false;
   }
-  if (url.hostname === self._zitiConfig.browzer.bootstrapper.self.host) {
-    return true;
-  } else {
-    return false;
-  }
+  return true;
 };
 
 registerRoute(
@@ -173,11 +162,7 @@ const matchPATCHCb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
     return false;
   }
-  if (url.hostname === self._zitiConfig.browzer.bootstrapper.self.host) {
-    return true;
-  } else {
-    return false;
-  }
+  return true;
 };
 
 registerRoute(
@@ -188,11 +173,7 @@ const matchDELETECb = (url:any, request:any) => {
   if (typeof self._zitiConfig === 'undefined') {
     return false;
   }
-  if (url.hostname === self._zitiConfig.browzer.bootstrapper.self.host) {
-    return true;
-  } else {
-    return false;
-  }
+  return true;
 };
 
 registerRoute(
