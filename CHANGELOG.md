@@ -1,3 +1,12 @@
+## [0.72.6](https://github.com/openziti/ziti-browzer-sw/compare/v0.72.5...v0.72.6) (2025-01-16)
+
+
+### Bug Fixes
+
+* Correct sub-domain Service-routing issue ([#242](https://github.com/openziti/ziti-browzer-sw/issues/242)) ([a36d527](https://github.com/openziti/ziti-browzer-sw/commit/a36d527dbe04ccb4a5629aa30a8562eaa608b3c8))
+
+
+
 ## [0.72.5](https://github.com/openziti/ziti-browzer-sw/compare/v0.72.4...v0.72.5) (2025-01-16)
 
 
