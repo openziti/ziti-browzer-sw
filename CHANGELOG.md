@@ -1,3 +1,12 @@
+## [0.73.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.73.0...v0.73.1) (2025-01-21)
+
+
+### Bug Fixes
+
+* Correct 30x Location header target transform error ([#245](https://github.com/openziti/ziti-browzer-sw/issues/245)) ([8835179](https://github.com/openziti/ziti-browzer-sw/commit/883517974131373a4dbbe833552788b2847f641b))
+
+
+
 # [0.73.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.72.7...v0.73.0) (2025-01-21)
 
 
