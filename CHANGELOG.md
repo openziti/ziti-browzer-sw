@@ -1,3 +1,12 @@
+# [0.73.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.72.7...v0.73.0) (2025-01-21)
+
+
+### Features
+
+* Add 'Sec-Fetch-Mode navigate' header to HTTP requests when appropriate ([#244](https://github.com/openziti/ziti-browzer-sw/issues/244)) ([9649c51](https://github.com/openziti/ziti-browzer-sw/commit/9649c5190248560c6b7d4683fc70c60014a0eb75))
+
+
+
 ## [0.72.7](https://github.com/openziti/ziti-browzer-sw/compare/v0.72.6...v0.72.7) (2025-01-17)
 
 
