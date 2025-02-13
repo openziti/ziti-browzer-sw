@@ -1,3 +1,12 @@
+# [0.74.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.73.1...v0.74.0) (2025-02-13)
+
+
+### Features
+
+* HA OIDC auth mechanisms ([#246](https://github.com/openziti/ziti-browzer-sw/issues/246)) ([9f49887](https://github.com/openziti/ziti-browzer-sw/commit/9f4988749459ba8b23253244620f528b3b7a10aa))
+
+
+
 ## [0.73.1](https://github.com/openziti/ziti-browzer-sw/compare/v0.73.0...v0.73.1) (2025-01-21)
 
 
