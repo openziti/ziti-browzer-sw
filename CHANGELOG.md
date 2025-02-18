@@ -1,3 +1,12 @@
+# [0.75.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.74.0...v0.75.0) (2025-02-18)
+
+
+### Features
+
+* fix a 500 error caused by a bad redirect transform ([#248](https://github.com/openziti/ziti-browzer-sw/issues/248)) ([2b00fa9](https://github.com/openziti/ziti-browzer-sw/commit/2b00fa9501d464c5c8e1b036a232e9421f08fd22))
+
+
+
 # [0.74.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.73.1...v0.74.0) (2025-02-13)
 
 
