@@ -21,9 +21,10 @@ export default {
     /**
      * comment out the following IFF doing 'yarn link @openziti/ziti-browzer-sw-workbox-strategies' dev builds
      */
-    if (id.includes('/ziti-browzer-sw/node_modules/@openziti/ziti-browzer-core/')) {
-      return undefined;
-    }
+    // if (id.includes('/ziti-browzer-sw/node_modules/@openziti/ziti-browzer-core/')) {
+    //   console.log('rollup-config: id is: ', id)
+    //   return undefined;
+    // }
 
     const chunkNames = [
       '/lodash-es/',
