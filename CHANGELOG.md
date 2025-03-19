@@ -1,3 +1,12 @@
+# [0.79.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.78.0...v0.79.0) (2025-03-19)
+
+
+### Features
+
+* gather OIDC scope from /external-jwt-signers ([#261](https://github.com/openziti/ziti-browzer-sw/issues/261)) ([f4f7fb6](https://github.com/openziti/ziti-browzer-sw/commit/f4f7fb60ab2f827dee1b645967055a2fe9438562))
+
+
+
 # [0.78.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.77.0...v0.78.0) (2025-03-10)
 
 
