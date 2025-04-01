@@ -3,6 +3,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _unregister: () => Promise<unknown>;
   _unregisterNoReload: () => void;
   _accessTokenExpired: () => Promise<unknown>;
+  _accessTokenRefreshed: () => Promise<unknown>;
   _pingPage: () => Promise<unknown>;
   _noConfigForService: (serviceName: any) => Promise<unknown>;
   _noConfigProtocolForService: (serviceName: any) => Promise<unknown>;
@@ -27,6 +28,7 @@ interface zitiBrowzerServiceWorkerGlobalScope extends ServiceWorkerGlobalScope {
   _zbrReloadPending: boolean;
   _zbrPingTimestamp: any;
   _eruda: boolean;
+  _currentAPISession: any;
 }
 
 declare const self: zitiBrowzerServiceWorkerGlobalScope;
@@ -149,6 +151,10 @@ const filter = (url:any) => {
   if ((filterURL.hostname === idpURL.hostname)) {
     return false;
   }
+  if (filterURL.pathname.includes("controller-oidc-proxy")) {
+    return false;
+  }
+
   return true;
 };
 
@@ -208,6 +214,17 @@ self.addEventListener('message', async (event) => {
       version: pjson.version,
       zitiConfig: self._zitiConfig
     });
+  }
+
+  /**
+   * 
+   */
+  else if (event.data.type === 'GET_CURRENT_API_SESSION') {
+    self.skipWaiting();
+    self._logger.trace(`message.GET_CURRENT_API_SESSION received`);
+    event.ports[0].postMessage(
+      self._currentAPISession
+    );
   }
 
   /**
@@ -319,6 +336,22 @@ self._unregisterNoReload = function (  ) {
     )
   }
   self._logger.trace(`_accessTokenExpired completed `);
+}
+
+/**
+ * 
+ */
+self._accessTokenRefreshed = async function (  ) {
+  self._logger.trace(`_accessTokenRefreshed starting `);
+  const windows = await self.clients.matchAll({ type: 'window' })
+  for (const window of windows) {
+    window.postMessage(
+      { 
+        type: 'ACCESS_TOKEN_REFRESHED'
+      } 
+    )
+  }
+  self._logger.trace(`_accessTokenRefreshed completed `);
 }
 
 /**

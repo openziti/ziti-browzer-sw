@@ -94,9 +94,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openziti/ziti-browzer-core@npm:^0.61.0":
-  version: 0.61.0
-  resolution: "@openziti/ziti-browzer-core@npm:0.61.0"
+"@openziti/ziti-browzer-core@npm:^0.62.0":
+  version: 0.62.0
+  resolution: "@openziti/ziti-browzer-core@npm:0.62.0"
   dependencies:
     "@openziti/libcrypto-js": "npm:^0.24.0"
     "@openziti/ziti-browzer-edge-client": "npm:^0.7.0"
@@ -137,7 +137,7 @@ __metadata:
     url: "npm:^0.11.0"
     util: "npm:^0.12.4"
     uuid: "npm:^11.1.0"
-  checksum: 564be5b4e8d324129bd6a583ccf4f2f2cb92fefe531b912b41022ef03c070bb1ea46617826feba3c7425a731a080f7fcaedac489e08e9444c20b8b3e15efbe74
+  checksum: 56e65ac77fb0a2e0bdcdefee0b022fcd5d6937a26f3fe9ca6eb99bdca4c2bf9cb2c039bbfecd880d31e158d5e7f8fa4b94bf4e4be1f373c4e78ae3ace05d7908
   languageName: node
   linkType: hard
 
@@ -150,11 +150,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openziti/ziti-browzer-sw-workbox-strategies@npm:^0.85.0":
-  version: 0.85.0
-  resolution: "@openziti/ziti-browzer-sw-workbox-strategies@npm:0.85.0"
+"@openziti/ziti-browzer-sw-workbox-strategies@npm:^0.86.0":
+  version: 0.86.0
+  resolution: "@openziti/ziti-browzer-sw-workbox-strategies@npm:0.86.0"
   dependencies:
-    "@openziti/ziti-browzer-core": "npm:^0.61.0"
+    "@openziti/ziti-browzer-core": "npm:^0.62.0"
     async-mutex: "npm:^0.5.0"
     cheerio: "npm:^1.0.0-rc.12"
     jwt-decode: "npm:^3.1.2"
@@ -163,7 +163,7 @@ __metadata:
     workbox-core: "npm:^6.6.0"
     workbox-expiration: "npm:^6.6.0"
     workbox-strategies: "npm:^6.6.0"
-  checksum: 8b101d59ffb95987487bc87b379372d207099acec2a4a7f263720f35a7bd96e9172418cb792a7ecd0d4c90669c5c3f0f0a3c961a1f73abc7f3315916addac0de
+  checksum: c17d0ad88f30e2fe9593776dfc95fa0a58f2b215d7674448faa4dd9f7ff9f4949f7b397985d750b06ad6185805b260b383f4b6ff5f2d797fa9446795205b5e7c
   languageName: node
   linkType: hard
 
@@ -171,7 +171,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@openziti/ziti-browzer-sw@workspace:."
   dependencies:
-    "@openziti/ziti-browzer-sw-workbox-strategies": "npm:^0.85.0"
+    "@openziti/ziti-browzer-sw-workbox-strategies": "npm:^0.86.0"
     "@rollup/plugin-commonjs": "npm:^22.0.0"
     "@rollup/plugin-json": "npm:^4.1.0"
     "@rollup/plugin-node-resolve": "npm:^13.2.1"
