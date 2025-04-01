@@ -1,3 +1,12 @@
+# [0.81.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.80.0...v0.81.0) (2025-04-01)
+
+
+### Features
+
+* various HA enhancements ([#265](https://github.com/openziti/ziti-browzer-sw/issues/265)) ([2bcde4e](https://github.com/openziti/ziti-browzer-sw/commit/2bcde4edb1f07946e8e49f69a8367641ee863bb5))
+
+
+
 # [0.80.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.79.1...v0.80.0) (2025-03-20)
 
 
