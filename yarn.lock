@@ -3038,8 +3038,8 @@ __metadata:
   linkType: hard
 
 "rollup@npm:^2.71.1":
-  version: 2.71.1
-  resolution: "rollup@npm:2.71.1"
+  version: 2.79.2
+  resolution: "rollup@npm:2.79.2"
   dependencies:
     fsevents: "npm:~2.3.2"
   dependenciesMeta:
@@ -3047,7 +3047,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 3fd82322ade2916eb576c2d974fc5603382af5f92c8f3dc6359efb35b00dbf2b2085f70164ece118fc482a9aa67d899093b50182b044c01fd62928d789a7f614
+  checksum: bc3746c988d903c2211266ddc539379d53d92689b9cc5c2b4e3ae161689de9af491957a567c629b6cc81f48d0928a7591fc4c383fba68a48d2966c9fb8a2bce9
   languageName: node
   linkType: hard
 
