@@ -187,7 +187,7 @@ __metadata:
     rollup-plugin-terser: "npm:^7.0.2"
     tslib: "npm:^2.3.1"
     typescript: "npm:^5.2.2"
-    urlpattern-polyfill: "npm:^0.1.6"
+    urlpattern-polyfill: "npm:^10.0.0"
     workbox-core: "npm:^6.6.0"
     workbox-expiration: "npm:^6.6.0"
     workbox-precaching: "npm:^6.6.0"
@@ -3742,10 +3742,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"urlpattern-polyfill@npm:^0.1.6":
-  version: 0.1.6
-  resolution: "urlpattern-polyfill@npm:0.1.6"
-  checksum: 8f80312d364c2cd5ffd37f55dfad96b21a1005d62d07f1077aefcea1aec0aebc89241491bdc166425cf548c4ddfadc64a5cacc0dc154b34fe78a7f98999d0929
+"urlpattern-polyfill@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "urlpattern-polyfill@npm:10.0.0"
+  checksum: 43593f2a89bd54f2d5b5105ef4896ac5c5db66aef723759fbd15cd5eb1ea6cdae9d112e257eda9bbc3fb0cd90be6ac6e9689abe4ca69caa33114f42a27363531
   languageName: node
   linkType: hard
 
