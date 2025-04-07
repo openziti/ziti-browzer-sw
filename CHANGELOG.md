@@ -1,3 +1,12 @@
+# [0.83.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.82.0...v0.83.0) (2025-04-07)
+
+
+### Features
+
+* defensive programming for dumpHeaders UUID ([#269](https://github.com/openziti/ziti-browzer-sw/issues/269)) ([3d1a846](https://github.com/openziti/ziti-browzer-sw/commit/3d1a8468e9fa8a9d0ab6f256f6ffc776a8863d80))
+
+
+
 # [0.82.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.81.0...v0.82.0) (2025-04-02)
 
 
