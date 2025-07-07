@@ -1,3 +1,12 @@
+# [0.84.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.83.0...v0.84.0) (2025-07-07)
+
+
+### Features
+
+* remove JSPI origin trial mechanisms ([#284](https://github.com/openziti/ziti-browzer-sw/issues/284)) ([e727dfb](https://github.com/openziti/ziti-browzer-sw/commit/e727dfb1e633912de49cf492b3d5d4cc668b6f79))
+
+
+
 # [0.83.0](https://github.com/openziti/ziti-browzer-sw/compare/v0.82.0...v0.83.0) (2025-04-07)
 
 
